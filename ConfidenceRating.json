@@ -14,7 +14,7 @@
             "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating",
             "@type": "ConceptScheme",
             "title": "ConfidenceRating",
-            "description": "The probability that something is true or possible.",
+            "description": "Identifiers for the classification of the certainty of an assertion.",
             "creator": "Rebecca Ringuette"
         },
         {
