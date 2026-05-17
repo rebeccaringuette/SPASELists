@@ -11,29 +11,35 @@
     },
     "@graph": [
         {
-            "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights",
+            "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating",
             "@type": "ConceptScheme",
-            "title": "AccessRights",
-            "description": "Permissions granted or denied by the host of a product to allow other users to access and use the resource.",
+            "title": "ConfidenceRating",
+            "description": "The probability that something is true or possible.",
             "creator": "Rebecca Ringuette"
         },
         {
             "@type": "Concept",
-            "prefLabel": "Open",
-            "definition": "Access is granted to everyone.",
-            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
+            "prefLabel": "Probable",
+            "definition": "Likely given the available evidence. Considered in the range of 4 to 7 on a scale of 0 to 10.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating"
         },
         {
             "@type": "Concept",
-            "prefLabel": "PartiallyRestricted",
-            "definition": "Some portions of the resource have restricted access, the rest is open access. Typically, this is for accumulating data collections where some data is under review before being publicly released.",
-            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
+            "prefLabel": "Strong",
+            "definition": "Highly likely given the available evidence. Considered in the range of 7 to 10 on a scale of 0 to 10.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating"
         },
         {
             "@type": "Concept",
-            "prefLabel": "Restricted",
-            "definition": "Access to the product is regulated and requires some form of identification.",
-            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
-        }      
+            "prefLabel": "Unlikely",
+            "definition": "Not likely given the available evidence. Considered equal to 0 on a scale of 0 to 10.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating"
+        },      
+         {
+            "@type": "Concept",
+            "prefLabel": "Weak",
+            "definition": "Slightly likely given the available evidence. Considered in the range of 1 to 4 on a scale of 0 to 10.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ConfidenceRating"
+        } 
     ]
 }
