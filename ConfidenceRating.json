@@ -1,0 +1,39 @@
+{
+    "@context": {
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "Concept": { "@id": "skos:Concept" },
+        "ConceptScheme": { "@id": "skos:Concept" },
+        "title": { "@id": "dct:title" },
+        "creator": { "@id": "dct:creator" },
+        "prefLabel": { "@id": "skos:prefLabel" },
+        "definition": { "@id": "skos:definition" },
+        "inScheme": { "@id": "skos:inScheme" }
+    },
+    "@graph": [
+        {
+            "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights",
+            "@type": "ConceptScheme",
+            "title": "AccessRights",
+            "description": "Permissions granted or denied by the host of a product to allow other users to access and use the resource.",
+            "creator": "Rebecca Ringuette"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "Open",
+            "definition": "Access is granted to everyone.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "PartiallyRestricted",
+            "definition": "Some portions of the resource have restricted access, the rest is open access. Typically, this is for accumulating data collections where some data is under review before being publicly released.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "Restricted",
+            "definition": "Access to the product is regulated and requires some form of identification.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AccessRights"
+        }      
+    ]
+}
