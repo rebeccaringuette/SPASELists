@@ -15,7 +15,7 @@
             "@type": "ConceptScheme",
             "title": "AnnotationType",
             "description": "Identifiers for an classification of an annotation.",
-            "creator": "Rebecca Ringuette"
+            "creator": "Isabella Ruiz"
         },
         {
             "@type": "Concept",
