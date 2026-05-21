@@ -1,1 +1,39 @@
-
+{
+    "@context": {
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "Concept": { "@id": "skos:Concept" },
+        "ConceptScheme": { "@id": "skos:Concept" },
+        "title": { "@id": "dct:title" },
+        "creator": { "@id": "dct:creator" },
+        "prefLabel": { "@id": "skos:prefLabel" },
+        "definition": { "@id": "skos:definition" },
+        "inScheme": { "@id": "skos:inScheme" }
+    },
+    "@graph": [
+        {
+            "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AnnotationType",
+            "@type": "ConceptScheme",
+            "title": "AnnotationType",
+            "description": "Identifiers for an classification of an annotation.",
+            "creator": "Rebecca Ringuette"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "Anomaly",
+            "definition": "An interval where measurements or observations may be adversely affected.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AnnotationType"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "Event",
+            "definition": "An action or observation which occurs at a point in time.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AnnotationType"
+        },
+        {
+            "@type": "Concept",
+            "prefLabel": "Feature",
+            "definition": "A prominent or distinctive characteristic that occurs at a location or persists over a period of time.",
+            "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AnnotationType"
+        }
+    ]
+}
