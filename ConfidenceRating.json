@@ -15,7 +15,7 @@
             "@type": "ConceptScheme",
             "title": "ConfidenceRating",
             "description": "Identifiers for the classification of the certainty of an assertion.",
-            "creator": "Rebecca Ringuette"
+            "creator": "Isabella Ruiz"
         },
         {
             "@type": "Concept",
