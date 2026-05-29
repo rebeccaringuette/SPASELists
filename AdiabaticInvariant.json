@@ -26,7 +26,7 @@
     {
       "@type": "Concept",
       "prefLabel": "DriftMotion",
-      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J2, is equal to q*phi where q is the particle charge and phi is the magnetic flux enclosed within the particle drift path.",
+      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.",
       "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AdiabaticInvariant"
     },
     {
