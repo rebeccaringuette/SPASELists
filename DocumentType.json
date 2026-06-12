@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/DocumentType",
+      "@type": "ConceptScheme",
+      "title": "DocumentType",
+      "description": "Identifiers for the characterization of the content or purpose of a document.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Convention",
+      "definition": "A set of agreed, stipulated, or generally accepted approaches or methods of adopting a standard or implementing an approach.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Other",
+      "definition": "Not classified with more specific terms. The context of its usage may be described in related text.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Policy",
+      "definition": "A deliberate system of principles to guide decisions and achieve rational outcomes. A policy is a statement of intent, and is implemented as a procedure or protocol.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Poster",
+      "definition": "A set of information arranged on a single page or sheet, typically in a large format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Presentation",
+      "definition": "A set of information that is used when communicating to an audience.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Report",
+      "definition": "A document which describes the findings of some individual or group.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Specification",
+      "definition": "A detailed description of the requirements and other aspects of an object or component that may be used to develop an implementation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TechnicalNote",
+      "definition": "A document summarizing the performance and other technical characteristics of a product, machine, component, subsystem or software in sufficient detail to be used by an engineer or researcher.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WhitePaper",
+      "definition": "An authoritative report giving information or proposals on an issue.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/DocumentType"
+    }
+  ]
+}

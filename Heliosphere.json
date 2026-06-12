@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere",
+      "@type": "ConceptScheme",
+      "title": "Heliosphere",
+      "description": "Identifiers for regions of the solar atmosphere which extends roughly from the inner corona to the edge of the solar plasma at the heliopause separating primarily solar plasma from interstellar plasma.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Heliosheath",
+      "definition": "The region extending radially outward from the heliospheric termination shock and in which the decelerated solar wind plasma is still significant.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Inner",
+      "definition": "The region of the heliosphere extending radially outward from the solar coronal base to just inside 1 AU.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NearEarth",
+      "definition": "The heliospheric region near the Earth which extends to and includes the area near the L1 and L2 Lagrange point.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Outer",
+      "definition": "The region of the heliosphere extending radially outward from just outside 1 AU to the heliospheric termination shock.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Remote1AU",
+      "definition": "A roughly toroidal region that includes the orbit of the Earth, but exclusive of the region near the Earth.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Heliosphere"
+    }
+  ]
+}
