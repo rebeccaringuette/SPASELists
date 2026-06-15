@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/SourceType",
+      "@type": "ConceptScheme",
+      "title": "SourceType",
+      "description": "Identifiers for the characterization of the function or purpose of a source.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ancillary",
+      "definition": "A complementary item which can be subordinate, subsidiary, auxiliary, supplementary to the primary item.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/SourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Browse",
+      "definition": "A representation of an image which is suitable to reveal most or all of the details of the image.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/SourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Data",
+      "definition": "A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/SourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Layout",
+      "definition": "The structured arrangement of items in a collection.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/SourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Thumbnail",
+      "definition": "A small representation of an image which is suitable to infer what the full-sized imaged is like.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/SourceType"
+    }
+  ]
+}

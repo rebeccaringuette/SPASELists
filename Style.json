@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/Style",
+      "@type": "ConceptScheme",
+      "title": "Style",
+      "description": "Identifiers for the manner in which a response from a URL is presented.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EPNTAP",
+      "definition": "Europlanet (EPN) Table Access Protocol (TAP) is a framework, which is using TAP with the EPNcore metadata dictionary. The EPNcore metadata dictionary defines the core components that are necessary to perform data discovery in the Solar System related science fields, see https://github.com/ivoa-std/EPNTAP.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "File",
+      "definition": "Access to a file containing the data.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Git",
+      "definition": "Git is a version control system for tracking changes in any set of files. It is known for its speed, data integrity, and support for distributed, non-linear workflows.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HAPI",
+      "definition": "A Heliophysics Application Programmer Interface (HAPI) specification compliant access point.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Listing",
+      "definition": "A listing of files either through FTP or HTTP.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Overview",
+      "definition": "A web page that provides and overview of available data and links.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Search",
+      "definition": "A web search interface that requires additional input.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TAP",
+      "definition": "The table access protocol (TAP) defines a service protocol for accessing general table data, including astronomical catalogs as well as general database tables. Access is provided for both database and table metadata as well as for actual table data. https://wiki.ivoa.net/twiki/bin/view/IVOA/TableAccess.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Template",
+      "definition": "A URI template that contains special fields as defined in URI Template specification http://tsds.org/uri_templates.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WebService",
+      "definition": "A Web-based service that uses SOAP, WSDL or UDDI open standards.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Style"
+    }
+  ]
+}

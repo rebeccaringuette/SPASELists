@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/YN",
+      "@type": "ConceptScheme",
+      "title": "YN",
+      "description": "Yes or No",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "No",
+      "definition": "The negative response to a yes or no question.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/YN"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Yes",
+      "definition": "The affirmative response to a yes or no question.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/YN"
+    }
+  ]
+}

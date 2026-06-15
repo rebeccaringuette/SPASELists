@@ -1,0 +1,189 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity",
+      "@type": "ConceptScheme",
+      "title": "WaveQuantity",
+      "description": "Identifiers for the characterization of the physical properties of a wave.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Absorption",
+      "definition": "Decrease of radiant energy (relative to the background continuum spectrum).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACElectricField",
+      "definition": "Alternating electric field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACMagneticField",
+      "definition": "Alternating magnetic field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Albedo",
+      "definition": "The ratio of reflected radiation from the surface to incident radiation upon it.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DopplerFrequency",
+      "definition": "Change in the frequency of a propagating wave due to motion of the source, the observer, the reflector, or the propagation medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Emissivity",
+      "definition": "The energy emitted spontaneously per unit bandwidth (typically frequency) per unit time per unit mass of source. Emissivity is usually integrated over all directions/solid angles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyFlux",
+      "definition": "The amount of energy passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EquivalentWidth",
+      "definition": "The spectral width of a total absorption line having the amount of absorbed radiant energy being equivalent to that in an observed absorption line.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Frequency",
+      "definition": "The number of occurrences of a repeating event per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Gyrofrequency",
+      "definition": "The number of gyrations around a magnetic guiding center (field line) a charged particle makes per unit time due to the Lorentz force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Intensity",
+      "definition": "The measurement of radiant or wave energy per unit detector area per unit bandwidth per unit solid angle per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LineDepth",
+      "definition": "The measure of the amount of absorption below the continuum (depth) in a particular wavelength or frequency in an absorption spectrum.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LowerHybridFrequency",
+      "definition": "Lower hybrid oscillations involve longitudinal motions of electrons and ions in a magnetized plasma. The propagation of lower hybrid waves must be close to perpendicular to the background magnetic field in so that electrons cannot move along field lines thus preventing wave growth. The lower hybrid frequency, &phi;<sub>LH</sub>, can be calculated by using &phi;<sub>LH</sub>=[(&omega;<sub>ce</sub>&omega;<sub>ci</sub>)<sup>-1</sup>+&phi;<sub>pi</sub><sup>-2</sup>]<sup>-1/2</sup> where &omega;<sub>ce</sub> and &omega;<sub>ci</sub> are the electron and ion cyclotron frequencies, respectively, and $phi;<sub>LH</sub> is the ion plasma frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticField",
+      "definition": "A region of space near a magnetized body where magnetic forces can be detected (as measured by methods such as Zeeman splitting, etc.).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ModeAmplitude",
+      "definition": "In helioseismology the magnitude of oscillation of waves of a particular geometry.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaFrequency",
+      "definition": "A number density dependent characteristic frequency of a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Polarization",
+      "definition": "Direction of the electric vector of an electromagnetic wave. The wave can be linearly polarized in any direction perpendicular to the direction of travel, circularly polarized (clockwise or counterclockwise), unpolarized, or mixtures of the above.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PoyntingFlux",
+      "definition": "Electromagnetic energy flux transported by a wave characterized as the rate of energy transport per unit area per steradian.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PropagationTime",
+      "definition": "Time difference between transmission and reception of a wave in an active wave experiment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "StokesParameters",
+      "definition": "A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "UpperHybridFrequency",
+      "definition": "Upper hybrid oscillations involve longitudinal motions of electrons perpendicular to the magnetic field. The upper hybrid frequency, &phi;<sub>UH</sub>, is governed by the relationship &phi;<sub>UH</sub>^2=&phi;<sub>pe</sub>^2+&theta;<sub>ce</sub>^2 where &phi;<sub>pe</sub> is electron plasma frequency and &theta;<sub>ce</sub> is the electron cyclotron frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Velocity",
+      "definition": "Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VolumeEmissionRate",
+      "definition": "The volume emission rate, e(r,t,l), is the number of photons emitted per unit source volume per second (photons/m^3/s), as measured along the line of sight between the source point and the observer. The Volume Emission Rate is in general a function of the line-of-sight distance, r, time, t, and wavelength, l. The Volume Emission Rate is actually not a directly measurable quantity. However, the term has been commonly used in both data product descriptions and research publications.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Wavelength",
+      "definition": "The peak-to-peak distance over one wave period.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WavePhase",
+      "definition": "Position of a wave within its cycle at a given point in time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveQuantity"
+    }
+  ]
+}

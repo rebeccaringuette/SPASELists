@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/Waves",
+      "@type": "ConceptScheme",
+      "title": "Waves",
+      "description": "Identifiers for experimental and natural wave phenomena.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Active",
+      "definition": "Exerting an influence or producing a change or effect. An active measurement is one which produces a transmission or excitation as a part of the measurement cycle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Waves"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Passive",
+      "definition": "Movement or effect produced by outside influence. A passive measurement is one which does not produce a transmission or excitation as a part of the measurement cycle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Waves"
+    }
+  ]
+}

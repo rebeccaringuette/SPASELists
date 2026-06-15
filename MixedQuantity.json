@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity",
+      "@type": "ConceptScheme",
+      "title": "MixedQuantity",
+      "description": "Identifiers for the combined attributes of a mixed parameter quantity.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AkasofuEpsilon",
+      "definition": "A measure of the magnetopause energy flux and an indicator of the solar wind power available for subsequent magnetospheric energization. Defined as: V*B^2*l^2sin(theta/2)^4 where B is the IMF, l is an empirical scaling parameter equal to 7 R<sub>E</sub>, and theta=tan(By/Bz)^-1 the IMF clock angle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenMachNumber",
+      "definition": "The ratio of the bulk flow speed to the Alfven speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenVelocity",
+      "definition": "Phase velocity of the Alfven wave. In SI units it is the velocity of the magnetic field divided by the square root of the mass density times the permeability of free space (&mu;<sub>0</sub>).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FrequencyToGyrofrequencyRatio",
+      "definition": "The ratio of the characteristic frequency of a medium to gyrofrequency of a particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IMFClockAngle",
+      "definition": "The clockwise angle of the direction of interplanetary magnetic field (IMF) measured in the plane of the body pole perpendicular to the line between the body and the Sun.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagnetosonicMachNumber",
+      "definition": "The ratio of the velocity of fast mode waves to the Alfven velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Other",
+      "definition": "Not classified with more specific terms. The context of its usage may be described in related text.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaBeta",
+      "definition": "The ratio of the plasma pressure (nkT) to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a single component plasma or the ratio of the plasma pressure sum over i of (n<sub>i</sub>kT<sub>i</sub>) for all species i to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a multi components plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolarUVFlux",
+      "definition": "The amount of ultraviolet energy originating from the Sun passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TotalPressure",
+      "definition": "In an MHD fluid it is the number density (N) times Boltzmann constant times the temperature in Kelvin.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VCrossB",
+      "definition": "The cross product of the charge velocity (V) and the magnetic field (B). It is the electric field exerted on a point charge by a magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/MixedQuantity"
+    }
+  ]
+}

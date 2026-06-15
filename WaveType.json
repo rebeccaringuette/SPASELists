@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/WaveType",
+      "@type": "ConceptScheme",
+      "title": "WaveType",
+      "description": "Identifiers for the carrier or phenomenum of wave information observed by the measurement.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electromagnetic",
+      "definition": "Electric and magnetic field variations in time and space that propagate through a medium or a vacuum. The wave propagation direction, electric field vector, and magnetic field vector form an orthogonal triad. Waves in this category are detected by having their field quantities measured.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electrostatic",
+      "definition": "Collective longitudinal electric-field and plasma oscillations trapped within a body of plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Hydrodynamic",
+      "definition": "Periodic or quasi-periodic oscillations of fluid quantities.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MHD",
+      "definition": "Hydrodynamic waves in a magnetized plasma in which the background magnetic field plays a key role in controlling the wave propagation characteristics.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photon",
+      "definition": "Electromagnetic waves detected by techniques that utilize their corpuscular character (e.g., CCD, CMOS, or Photomultiplier).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaWaves",
+      "definition": "Self-consistent collective oscillations of particles and fields (electric and magnetic) in a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/WaveType"
+    }
+  ]
+}
