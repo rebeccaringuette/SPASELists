@@ -1,0 +1,303 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity",
+      "@type": "ConceptScheme",
+      "title": "ParticleQuantity",
+      "description": "Identifiers for the characterization of the physical properties of the particle.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AdiabaticInvariant",
+      "definition": "A property of a physical system usually related to periodic phenomena that remains constant under slowly varying conditions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BounceMotion",
+      "definition": "The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J=m &int; v||*ds where m is the mass of the charged particle, v|| is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.BounceMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DriftMotion",
+      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.DriftMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticMoment",
+      "definition": "A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower-case Greek letter for mu and can be calculated by using mu equal to m(u^2/2B) where m is the particle mass, u is the velocity of the particle perpendicular to the constant or average magnetic field direction, and B is the magnitude of the magnetic field strength.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.MagneticMoment"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ArrivalDirection",
+      "definition": "An angular measure of the direction from which an energetic particle or photon was incident on a detector. The angles may be measured in any coordinate system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AtomicNumberDetected",
+      "definition": "The number of protons in the nucleus of an atom as determined by a detector.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AverageChargeState",
+      "definition": "A measure of the composite deficit (positive) or excess (negative) of electrons with respect to protons.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeFlux",
+      "definition": "The number of ionized particles passing through a unit area per unit time, for instance as measured by a Faraday cup.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeState",
+      "definition": "Charge of a fully or partially stripped ion, in units of the charge of a proton. Charge state of a bare proton is equal to one.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CountRate",
+      "definition": "The number of events per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Counts",
+      "definition": "The number of detection events occurring in a detector over the detector accumulation time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Current",
+      "definition": "It is the scalar quantity giving the net charge (summed over charged particle species) per unit time flowing across a given surface.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CurrentDensity",
+      "definition": "It is the vector quantity giving the net charge (summed over charged particle species) per unit cross-sectional area per unit time flowing through a given point. Measurements of current density are often provided in terms of the magnetic perturbations (superposed upon a background magnetic field, if present) associated with the current density.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DynamicPressure",
+      "definition": "Dynamic pressure is a measure of the kinetic energy per unit volume of a fluid. For instance, the solar wind dynamic pressure or ram pressure for a purely proton plasma is equal to m<sub>p</sub> n V<sup>2</sup> where m<sub>p</sub> is the proton mass, n is the proton number density, and V is the solar wind speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Energy",
+      "definition": "The capacity for doing work as measured by the capability of doing work (potential energy) or the conversion of this capability to motion (kinetic energy).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyDensity",
+      "definition": "The amount of energy per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyFlux",
+      "definition": "The amount of energy passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyPerCharge",
+      "definition": "The kinetic energy, E, per unit net charge, q, that is E/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Entropy",
+      "definition": "A function of thermodynamic quantity, such as temperature, pressure, or composition, that is a measure of the energy that is not available for work during a thermodynamic process. It is often interpreted as the degree of disorder or randomness in the system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowSpeed",
+      "definition": "The magnitude of the flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowVelocity",
+      "definition": "The mean velocity of all particles in the flow, also referred to as bulk velocity or average flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Fluence",
+      "definition": "The time integral of a flux. A fluence is a not a measurement of flux per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeometricFactor",
+      "definition": "A measure of the gathering power of a particle detector. The geometric factor can be used to correct particle measurements by accounting for the fact that only a fraction of the source particles is able to gain entry through the aperture of a detector. For an isotopic source distribution, the geometric factor corresponds to the solid angle subtended by the aperture. In practice, determination of the geometric factor requires numerical modeling and depends on detector design and the characteristics of the source.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Gyrofrequency",
+      "definition": "The number of gyrations around a magnetic guiding center (field line) a charged particle makes per unit time due to the Lorentz force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HeatFlux",
+      "definition": "Flow of thermal energy through a gas or plasma typically computed as third moment of a distribution function.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LShell",
+      "definition": "The L-shell is the magnetic equatorial radius (in units of planetary radii) of a dipole magnetic field line. For instance, if the L-shell value equals 6 say at Earth, the magnetic field lines cross the magnetic equator at six Earth radii. The L-shell concept can be applied generally to any magnetized planet or satellite with a dominant dipolar magnetic field moment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Mass",
+      "definition": "The measure of inertia (mass) of individual objects (e.g., aerosols).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassDensity",
+      "definition": "The mass of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassNumber",
+      "definition": "The total number of protons and neutrons (together known as nucleons) in an atomic nucleus.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassPerCharge",
+      "definition": "The mass, m, per unit net charge, q, that is m/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberDensity",
+      "definition": "The number of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberFlux",
+      "definition": "The number of particles passing a unit area in unit time, possibly also per unit energy (or equivalent) and/or per unit look direction.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRadius",
+      "definition": "The mean radius for a Gaussian distribution of particles with an axial ratio of 2 and a distribution width that varies as 0.5 radius. A value of zero means no cloud was detected.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRigidity",
+      "definition": "The particle momentum per unit charge. The particle Rigidity, R, is equal to pc/Ze.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhaseSpaceDensity",
+      "definition": "The number of particles per unit volume in the six-dimensional space of position and velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaFrequency",
+      "definition": "A number density dependent characteristic frequency of a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Pressure",
+      "definition": "The force per unit area exerted by a particle distribution or field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SonicMachNumber",
+      "definition": "The ratio of the bulk flow speed to the speed of sound in the medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SoundSpeed",
+      "definition": "The speed at which sound travels through a medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Temperature",
+      "definition": "A measure of the kinetic energy of random motion with respect to the average. Temperature is properly defined only for an equilibrium particle distribution (Maxwellian distribution).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ThermalSpeed",
+      "definition": "A characteristic fluctuation speed of a distribution of particles about the bulk flow speed of the distribution. The value of the thermal speed depends on the dimensions and temperature of the distribution. Specific quantitative definition of thermal speed must be provided by the provider of a resource to be described in SPASE. [Note: Its quantitative definition depends on the nature of the particle distribution and how the random speed is characterized or calculated and must be specified in the description of the quantity used in the product described by the SPASE document].",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Velocity",
+      "definition": "Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleQuantity"
+    }
+  ]
+}
