@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/ParticleType",
+      "@type": "ConceptScheme",
+      "title": "ParticleType",
+      "description": "Identifiers for the characterization of the kind of particle observed by the measurement.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Aerosol",
+      "definition": "A suspension of fine solid or liquid particles in a gas.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlphaParticle",
+      "definition": "A positively charged nuclear particle that consists of two protons and two neutrons.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Atom",
+      "definition": "Matter consisting of a nucleus surrounded by electrons which has no net charge.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Dust",
+      "definition": "Free microscopic particles of solid material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electron",
+      "definition": "An elementary particle that has a negative charge equal to about 1.60218*10^-19 C and a rest mass equal to about 9.10938*10^-31 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ion",
+      "definition": "An atom that has acquired a net electric charge by gaining or losing one or more electrons (Note: Z>2).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Molecule",
+      "definition": "A group of atoms so united and combined by chemical affinity that they form a complete, integrated whole, being the smallest portion of any particular compound that can exist in a free state.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Muon",
+      "definition": "An elementary particle similar to the electron, with an electric charge equal to -1 elementary charge, -e, and spin -1/2 h-bar with a much mass -206.7682827(46) times that of the electron rest mass, m sub e.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Neutron",
+      "definition": "An elementary particle with neutral charge that is a constituent of atomic nuclei. Neutrons have a rest mass slightly large than that of a proton equal to about 1.67493*10^-24 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Positron",
+      "definition": "An elementary particle that has a positive charge equal to about 1.60218*10^-19 C and a rest mass equal to about 9.10938*10^-31 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Proton",
+      "definition": "An elementary particle that is a constituent of all atomic nuclei. Protons have a positive charge equal to about 1.60218*10^-19 C and a rest mass equal to about 1.67262*10^-27 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ParticleType"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/Role",
+      "@type": "ConceptScheme",
+      "title": "Role",
+      "description": "Identifiers for the assigned or assumed function or position of an individual.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ArchiveSpecialist",
+      "definition": "An individual who is an expert on a collection of resources and may also be knowledgeable of the phenomenon and related physics represented by the resources. This includes librarians, curators, archive scientists and other experts.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Author",
+      "definition": "The composer or creator of an artifact. This can include presentations, articles, books, white papers, data products or any similar published work. In SPASE, Author is a Role under Person resource description.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CoInvestigator",
+      "definition": "An individual who is a scientific peer and major participant in an investigation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Contributor",
+      "definition": "An entity responsible for making contributions to the content of the resource.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CoPI",
+      "definition": "An individual who is peer of a principal investigator and is an administrative and scientific lead for an investigation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DataProducer",
+      "definition": "An individual who generated the resource and is familiar with its provenance.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DeputyPI",
+      "definition": "An individual who is an administrative or scientific leader for an investigation operating under the supervision of a Principal Investigator.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Developer",
+      "definition": "The developer of a system to imitate a situation or process.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FormerPI",
+      "definition": "An individual who had served as the administrative and scientific lead for an investigation, but no longer assumes that role.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeneralContact",
+      "definition": "An individual who can provide information on a range of subjects or who can direct you to a domain expert.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HostContact",
+      "definition": "An individual who can provide specific information with regard the hosting of a resource or supporting software.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InstrumentLead",
+      "definition": "An individual who is the designated leader of an instrument or instrument package.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InstrumentScientist",
+      "definition": "A scientist associated with a science instrument team with special familiarity and expertise on specific aspects of the design and operations of the instrument and the responsibility of ensuring the measurement capabilities of the instrument.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MetadataContact",
+      "definition": "An individual who can affect a change in the metadata describing a resource.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MissionManager",
+      "definition": "A Mission Manager is a role name used by the ESA. The Mission Manager corresponds to the Project Manager role used by NASA but the Mission Manager role only begins after the launch of the mission.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MissionPrincipalInvestigator",
+      "definition": "An individual who is the administrative and scientific lead for a mission.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "OperationsManager",
+      "definition": "The person who manages the instrument operation plans.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PrincipalInvestigator",
+      "definition": "An individual who is the administrative and scientific lead for an investigation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProgramManager",
+      "definition": "An individual whose major task entails direction of program team members such that the full organization achieves the objectives and goals of a program. The Program Manager is expected to provide clear guidance and resolve conflicts and issues while maintaining focus on achieving program success.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProgramScientist",
+      "definition": "A program scientist is someone who performs a range of scientific program planning duties, takes responsibility for the science content of flight mission programs or projects. A program scientist develops, reviews, and provides recommendations for proposed program requirements, expected results, budgetary estimates and also establishes methods and procedures to reduce program costs, provides expert advice to management on strategic planning and program development, develops and manages research program, and presents issues and proposes solutions to senior management.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProjectEngineer",
+      "definition": "An engineer tasked with the full suite of responsibilities as a project undergoes the transition from the requirements derivation and preliminary design phases to controlled hardware development, assembly and environmental testing. The Project Engineer manages a team while developing the cadence of hardware manufacturing and assembly until instrument deployment and through the end of the mission.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProjectManager",
+      "definition": "An individual whose major task entails direction of project team members such that the full organization achieves the objectives and goals of the mission. The Project Manager is expected to provide clear guidance and resolve conflicts and issues while maintaining focus on achieving mission success.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProjectScientist",
+      "definition": "An individual who is an expert in the phenomenon and related physics explored by the project. A project scientist may also have a managerial role within the project.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Publisher",
+      "definition": "An individual, organization, institution or government department responsible for the production and dissemination of a document.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Scientist",
+      "definition": "An individual who is an expert in the phenomenon and related physics represented by the resource.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TeamLeader",
+      "definition": "An individual who is the designated leader of an investigation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TeamMember",
+      "definition": "An individual who is a major participant in an investigation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TechnicalContact",
+      "definition": "An individual who can provide specific information with regard to the resource or supporting software.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "User",
+      "definition": "An individual who utilizes a resource or service.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Role"
+    }
+  ]
+}

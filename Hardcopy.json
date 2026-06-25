@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy",
+      "@type": "ConceptScheme",
+      "title": "Hardcopy",
+      "description": "Identifiers for permanent reproductions, or copy in the form of a physical object, of any media suitable for direct use by a person.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Film",
+      "definition": "An image recording medium on which usually a negative analog image is registered. A positive analog image can be recovered or reproduced from film, which is usually made of flexible materials for ease of storage and transportation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Microfiche",
+      "definition": "A sheet of microfilm on which many pages of material have been photographed. A magnification system is used to read the material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Microfilm",
+      "definition": "Film rolls on which materials are photographed at greatly reduced size. A magnification system is used to read the material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photograph",
+      "definition": "An image (positive or negative) registered on a piece of photo-sensitive paper.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhotographicPlate",
+      "definition": "A rigid (typically glass) medium that functions like film. Its rigidity is for guarding against image distortion due to medium deformation (caused by heat and humidity). Photographic plates are often used for astronomical photography.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Print",
+      "definition": "A sheet of any written or printed material which may include notes or graphics. Multiple printed pages may be bound into a manuscript or book.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/Hardcopy"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/ProcessingLevel",
+      "@type": "ConceptScheme",
+      "title": "ProcessingLevel",
+      "description": "Identifiers to characterize the amount and type of manipulation which has been applied to the sampled data.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Calibrated",
+      "definition": "Data wherein sensor outputs have been convolved with instrument response function, often irreversibly, to yield data in physical units. Similar to NASA Level 2.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ProcessingLevel"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Raw",
+      "definition": "Data in its original state with no processing to account for calibration. Similar to NASA Level 0.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ProcessingLevel"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Uncalibrated",
+      "definition": "Duplicate data are removed from the data stream and data are time ordered. Values are not adjusted for any potential biases or external factors. Similar to NASA Level 1.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ProcessingLevel"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ValueAdded",
+      "definition": "Calibrated data that has been mapped on uniform space-time grid scales with gaps, flags and out-of-range values replaced with appropriate values. Similar to NASA Level 3.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/ProcessingLevel"
+    }
+  ]
+}

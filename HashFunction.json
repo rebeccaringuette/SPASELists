@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/skos/HashFunction",
+      "@type": "ConceptScheme",
+      "title": "HashFunction",
+      "description": "Identifiers for functions or algorithms that convert a digital data object into a hash value.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MD5",
+      "definition": "Message Digest 5 (MD5) is a 128-bit message digest algorithm created in 1991 by Professor Ronald Rivest.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/HashFunction"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SHA1",
+      "definition": "Secure Hash Algorithm (SHA), a 160-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/HashFunction"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SHA256",
+      "definition": "Secure Hash Algorithm (SHA), a 256-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/skos/HashFunction"
+    }
+  ]
+}
