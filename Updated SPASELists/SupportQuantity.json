@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity",
+      "@type": "ConceptScheme",
+      "title": "SupportQuantity",
+      "description": "Identifiers for the information useful in understanding the context of an observation, typically observed or measured coincidentally with a physical observation.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DataQuality",
+      "definition": "An ancillary parameter that denotes the standard or degree of accuracy, trustworthiness, or usefulness of another parameter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Housekeeping",
+      "definition": "Parameters that indicate the status or health state of instruments or monitoring devices as measured in physical units such as that for current, voltage, or temperature. Housekeeping data can be analyzed to determine whether instruments are working correctly and the knowledge of their values may be used to avoid errors or even device failures.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InstrumentMode",
+      "definition": "An indication of a state (mode) in which the instrument is operating. How a mode influences the interpretation and representation of data is described in instrument related documentation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Orientation",
+      "definition": "The specification of the directional alignment of an object or measurement in a reference coordinate system. The orientation such as a spacecraft spin axis attitude is usually expressed as one or more angles relative to the basis axes of some specified physical space usually together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Other",
+      "definition": "Not classified with more specific terms. The context of its usage may be described in related text.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Positional",
+      "definition": "The specification of the location of an object or measurement within a reference coordinate system. The position is usually expressed as a set of values corresponding to the location along a set of orthogonal axes together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Remark",
+      "definition": "A notice, comment, or observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RotationMatrix",
+      "definition": "A tensor that is used to perform vector data transformation from one coordinate system to another.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinPeriod",
+      "definition": "The time required for an object such as a spacecraft or planet to perform one full rotation in a given frame of reference.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinPhase",
+      "definition": "An angular based or normalized parameter that specifies the spin state of an object such as a spacecraft or planet in a specific coordinate system usually together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinRate",
+      "definition": "The angular rate of change of the spin angle of an object such as a spacecraft or planet.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Telemetry",
+      "definition": "Parameters that include full packets of data from monitoring devices or the memory addresses of datum within telemetry packets. The data comprising telemetry packets are typically expressed by using non-physical engineering units and may be used to express a variety of device operating conditions such as command acceptance/execution, housekeeping, event characterization, memory dumps, and science data. Telemetry packets may be raw or unpacked.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Temporal",
+      "definition": "Pertaining to time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Velocity",
+      "definition": "Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WebResource",
+      "definition": "A Web page or file-based resource accessible by a URL.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WebService",
+      "definition": "A Web-based service that uses SOAP, WSDL or UDDI open standards.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SupportQuantity"
+    }
+  ]
+}

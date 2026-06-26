@@ -1,0 +1,348 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "@type": "ConceptScheme",
+      "title": "Format",
+      "description": "Identifiers for data organized according to preset specifications.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AVI",
+      "definition": "Audio Video Interleave (AVI) a digital format for movies that conforms to the Microsoft Windows Resource Interchange File Format (RIFF).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Binary",
+      "definition": "A direct representation of the bits which may be stored in memory on a computer.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CDF",
+      "definition": "Common Data Format (CDF). A binary storage format developed at Goddard Space Flight Center (GSFC).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CEF",
+      "definition": "Cluster Exchange Format (CEF) is a self-documenting ASCII format designed for the exchange of data. There are two versions of CEF which are not totally compatible.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CEF1",
+      "definition": "Cluster Exchange Format (CEF), version 1, is a self-documenting ASCII format designed for the exchange of data. The metadata contains information compatible with the ISTP recommendations for CDF.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CEF2",
+      "definition": "Cluster Exchange Format (CEF), version 2, is a self-documenting ASCII format designed for the exchange of data and introduced for Cluster Active Archive. Compared to version 1, the metadata description of vectors and tensors is different.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CSV",
+      "definition": "Comma Separated Value - A data exchange format defined by RFC 4180.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Excel",
+      "definition": "A Microsoft spreadsheet format used to hold a variety of data in tables which can include calculations.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FITS",
+      "definition": "Flexible Image Transport System (FITS) is a digital format primarily designed to store scientific data sets consisting of multi-dimensional arrays (1-D spectra, 2-D images or 3-D data cubes) and 2-D tables containing rows and columns of data.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GIF",
+      "definition": "Graphic Interchange Format (GIF) first introduced in 1987 by CompuServe. GIF uses LZW compression and images are limited to 256 colors.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Hardcopy",
+      "definition": "A permanent reproduction, or copy in the form of a physical object, of any media suitable for direct use by a person.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Film",
+      "definition": "An image recording medium on which usually a negative analog image is registered. A positive analog image can be recovered or reproduced from film, which is usually made of flexible materials for ease of storage and transportation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.Film"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Microfiche",
+      "definition": "A sheet of microfilm on which many pages of material have been photographed. A magnification system is used to read the material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.Microfiche"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Microfilm",
+      "definition": "Film rolls on which materials are photographed at greatly reduced size. A magnification system is used to read the material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.Microfilm"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photograph",
+      "definition": "An image (positive or negative) registered on a piece of photo-sensitive paper.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.Photograph"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhotographicPlate",
+      "definition": "A rigid (typically glass) medium that functions like film. Its rigidity is for guarding against image distortion due to medium deformation (caused by heat and humidity). Photographic plates are often used for astronomical photography.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.PhotographicPlate"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Print",
+      "definition": "A sheet of any written or printed material which may include notes or graphics. Multiple printed pages may be bound into a manuscript or book.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Hardcopy.Print"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HDF",
+      "definition": "Hierarchical Data Format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HDF4",
+      "definition": "Hierarchical Data Format, Version 4.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HDF5",
+      "definition": "Hierarchical Data Format, Version 5.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HTML",
+      "definition": "A text file containing structured information represented in the Hypertext Mark-up Language (HTML), see http://www.w3.org/MarkUp/.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IDFS",
+      "definition": "Instrument Data File Set (IDFS) is a set of files written in a prescribed format which contain data, timing data, and metadata. IDFS was developed at Southwest Research Institute (SwRI).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IDL",
+      "definition": "Interactive Data Language (IDL) save set. IDL is a proprietary format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "JPEG",
+      "definition": "A binary format for still images defined by the Joint Photographic Experts Group.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "JSON",
+      "definition": "JavaScript Object Notation - A lightweight data-interchange format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MATLAB_4",
+      "definition": "MATLAB Workspace save set, version 4. MAT-files are double-precision, binary, MATLAB format files. MATLAB is a proprietary product of The MathWorks.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MATLAB_6",
+      "definition": "MATLAB Workspace save set, version 6. MAT-files are double-precision, binary, MATLAB format files. MATLAB is a proprietary product of The MathWorks.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MATLAB_7",
+      "definition": "MATLAB Workspace save set, version 7. MAT-files are double-precision, binary, MATLAB format files. Version 7 includes data compression and Unicode encoding. MATLAB is a proprietary product of The MathWorks.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MPEG",
+      "definition": "A digital format for movies defined by the Motion Picture Experts Group.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NCAR",
+      "definition": "The National Center for Atmospheric Research (NCAR) format. A complete description of that standard is given in appendix C of the \"Report on Establishment & Operation of the Incoherent-Scatter Data Base\", dated 1984-08-23, obtainable from NCAR, P.O. Box 3000 Boulder, Colorado 80307-3000.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NetCDF",
+      "definition": "The Network Common Data Form (NetCDF) supported and maintained by the Unidata Program Center. A self-describing portable data format for array-oriented data access, see http://my.unidata.ucar.edu/content/software/netcdf.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PDF",
+      "definition": "A document expressed in the Portable Document Format (PDF) as defined by Adobe.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PDS3",
+      "definition": "The. Planetary Data System, version 3 (PDS3) standard provides guidelines on how a data producer should construct a data set suitable for long-term archiving. The standard contains a number of requirements in terms of dataset structure and documentation that should allow for any PDS compliant data set to be used and understood in the long term. Each PDS3 data product must be labeled in ASCII with full details on the structure and content of the product. The label can be attached to the data file itself or detached in a separate \"label\" file with the suffix LBL. The PDS3 standard is described at: https://pds.jpl.nasa.gov/datastandards/pds3/standards/. Since 2011, PDS3 has superseded by the PDS4 archiving standard. However, many data files still exist that are stored by using the PDS3 standard.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PDS4",
+      "definition": "The Planetary Data System, version 4 (PDS4) standard provides guidelines on how a data producer should construct a data set suitable for long-term archiving. The standard contains a number of requirements in terms of dataset structure and documentation that should allow for any PDS compliant data set to be used and understood in the long term. Each PDS4 bundle consists of two files, one containing the data and the other an eXtensible Markup Language (XML) file containing the label. PDS4 recognises four base data structures, array, table, parse-able byte stream and encoded byte stream with arrays and tables most commonly in use. The PDS4 standard is described at: https://pds.jpl.nasa.gov/datastandards/documents/current-version.shtml. The PDS4 archiving standard has been required for data archives from NASA-funded planetary missions and for small data archives since 2011.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PNG",
+      "definition": "A digital format for still images. Portable Network Graphics (PNG).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Postscript",
+      "definition": "A page description programming language created by Adobe Systems Inc. that is a device-independent industry standard for representing text and graphics.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "QuickTime",
+      "definition": "A format for digital movies, as defined by Apple Computer, see http://developer.apple.com/quicktime/.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RINEX2",
+      "definition": "Receiver Independent Exchange Format (RINEX) - version 2.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex211.txt.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RINEX3",
+      "definition": "Receiver Independent Exchange Format (RINEX) - version 3.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex300.pdf.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Text",
+      "definition": "A sequence of characters which may have an imposed structure or organization.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ASCII",
+      "definition": "A sequence of characters that adheres to American Standard Code for Information Interchange (ASCII) which is a 7-bit character-coding scheme.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Text.ASCII"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Unicode",
+      "definition": "Text in multi-byte Unicode format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format",
+      "altLabel": [
+        "Text.Unicode"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TFCat",
+      "definition": "Time-Frequency Catalogue (TFCat) is a catalogue model & transfer format for spectro-temporal features. https://gitlab.obspm.fr/maser/catalogues/catalogue-format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TIFF",
+      "definition": "A binary format for still pictures. Tagged Image Format File (TIFF). Originally developed by Aldus and now controlled by Adobe.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "UDF",
+      "definition": "Universal Data Format (UDF). The Optical Technology Storage Association Universal Disk Format, based on ISO 13346, see http://www.osta.org/specs/index.htm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VOTable",
+      "definition": "A proposed IVOA standard designed as a flexible storage and exchange format for tabular data.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "XML",
+      "definition": "eXtensible Mark-up Language (XML). A structured format for representing information, see http://www.w3.org/XML/.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Format"
+    }
+  ]
+}

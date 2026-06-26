@@ -1,0 +1,1341 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "@type": "ConceptScheme",
+      "title": "ParameterQuantity",
+      "description": "Identifiers for all types of parameter quantities",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "2DCuts",
+      "definition": "A set of 2-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a model volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "3DCubes",
+      "definition": "A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a model volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACElectricField",
+      "definition": "Alternating electric field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACMagneticField",
+      "definition": "Alternating magnetic field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Absorption",
+      "definition": "Decrease of radiant energy (relative to the background continuum spectrum).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ActivityIndex",
+      "definition": "An indication, derived from one or more measurements, of the level of activity of an object or region, such as sunspot number, F10.7 flux, Dst, or the Polar Cap Indices.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AdiabaticInvariant",
+      "definition": "A property of a physical system usually related to periodic phenomena that remains constant under slowly varying conditions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BounceMotion",
+      "definition": "The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J=m &int; v||*ds where m is the mass of the charged particle, v|| is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.BounceMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DriftMotion",
+      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.DriftMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticMoment",
+      "definition": "A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower-case Greek letter for mu and can be calculated by using mu equal to m(u^2/2B) where m is the particle mass, u is the velocity of the particle perpendicular to the constant or average magnetic field direction, and B is the magnitude of the magnetic field strength.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.MagneticMoment"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Aerosol",
+      "definition": "A suspension of fine solid or liquid particles in a gas.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AkasofuEpsilon",
+      "definition": "A measure of the magnetopause energy flux and an indicator of the solar wind power available for subsequent magnetospheric energization. Defined as: V*B^2*l^2sin(theta/2)^4 where B is the IMF, l is an empirical scaling parameter equal to 7 R<sub>E</sub>, and theta=tan(By/Bz)^-1 the IMF clock angle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Albedo",
+      "definition": "The ratio of reflected radiation from the surface to incident radiation upon it.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenMachNumber",
+      "definition": "The ratio of the bulk flow speed to the Alfven speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenVelocity",
+      "definition": "Phase velocity of the Alfven wave. In SI units it is the velocity of the magnetic field divided by the square root of the mass density times the permeability of free space (&mu;<sub>0</sub>).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlphaParticle",
+      "definition": "A positively charged nuclear particle that consists of two protons and two neutrons.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Antenna",
+      "definition": "A sensor used to measure electric potential.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ArrivalDirection",
+      "definition": "An angular measure of the direction from which an energetic particle or photon was incident on a detector. The angles may be measured in any coordinate system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Atom",
+      "definition": "Matter consisting of a nucleus surrounded by electrons which has no net charge.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AtomicNumberDetected",
+      "definition": "The number of protons in the nucleus of an atom as determined by a detector.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AverageChargeState",
+      "definition": "A measure of the composite deficit (positive) or excess (negative) of electrons with respect to protons.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AzimuthAngle",
+      "definition": "The angle between the projection into the I-J plane of a position or measured vector and the I-axis of the coordinate system. Mathematically defined as arctan(J/I). This term could be also applied to angles measured in different planes, i.e., the IMF clock angle defined as arctan(|By|/Bz).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CaK",
+      "definition": "A spectrum with a wavelength of range centered near 393.5 nm. VSO nickname: Ca-K image with range of 391.9 nm to 395.2 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Channeltron",
+      "definition": "An instrument that detects electrons, ions, and ultraviolet radiation, according to the principle of a secondary emission multiplier. It is typically used in electron spectroscopy and mass spectrometry.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeExchange",
+      "definition": "Chemical process involving a charge transfer from an ion (which becomes neutral) to a neutral (which becomes ionized).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeFlux",
+      "definition": "The number of ionized particles passing through a unit area per unit time, for instance as measured by a Faraday cup.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeState",
+      "definition": "Charge of a fully or partially stripped ion, in units of the charge of a proton. Charge state of a bare proton is equal to one.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Coronograph",
+      "definition": "An instrument which can image things very close to the Sun by using a disk to block the bright surface of the sun or a star that reveals the faint corona of the Sun or other celestial objects.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CountRate",
+      "definition": "The number of events per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Counts",
+      "definition": "The number of detection events occurring in a detector over the detector accumulation time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CrossSection",
+      "definition": "Cross section of the reaction, when the reaction implies the collision of two particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Current",
+      "definition": "It is the scalar quantity giving the net charge (summed over charged particle species) per unit time flowing across a given surface.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CurrentDensity",
+      "definition": "It is the vector quantity giving the net charge (summed over charged particle species) per unit cross-sectional area per unit time flowing through a given point. Measurements of current density are often provided in terms of the magnetic perturbations (superposed upon a background magnetic field, if present) associated with the current density.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DataQuality",
+      "definition": "An ancillary parameter that denotes the standard or degree of accuracy, trustworthiness, or usefulness of another parameter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DissociativeRecombination",
+      "definition": "Chemical process by which an ion is neutralized by capturing an electron, and splits in two new neutral species.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DopplerFrequency",
+      "definition": "Change in the frequency of a propagating wave due to motion of the source, the observer, the reflector, or the propagation medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Dopplergram",
+      "definition": "A map or image depicting the spatial distribution of line-of-sight velocities of the observed object.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DoubleSphere",
+      "definition": "A dipole antenna of which the active (sensor) elements are small spheres located at the ends of two wires deployed in the equatorial plane, on opposite sides of a spinning spacecraft.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Dust",
+      "definition": "Free microscopic particles of solid material.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DustDetector",
+      "definition": "An instrument which determines the mass and speed of ambient dust particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DynamicPressure",
+      "definition": "Dynamic pressure is a measure of the kinetic energy per unit volume of a fluid. For instance, the solar wind dynamic pressure or ram pressure for a purely proton plasma is equal to m<sub>p</sub> n V<sup>2</sup> where m<sub>p</sub> is the proton mass, n is the proton number density, and V is the solar wind speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electric",
+      "definition": "The physical attribute that exerts an electrical force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ElectricField",
+      "definition": "A region of space around a charged particle, or between two voltages within which a force is exerted on charged objects in its vicinity. An electric field is the electric force per unit charge.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electromagnetic",
+      "definition": "Electric and magnetic field variations in time and space that propagate through a medium or a vacuum. The wave propagation direction, electric field vector, and magnetic field vector form an orthogonal triad. Waves in this category are detected by having their field quantities measured.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electron",
+      "definition": "An elementary particle that has a negative charge equal to about 1.60218*10^-19 C and a rest mass equal to about 9.10938*10^-31 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ElectronDriftInstrument",
+      "definition": "An active experiment to measure the electron drift velocity based on sensing the displacement of a weak beam of electrons after one gyration in the ambient magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ElectronImpact",
+      "definition": "Chemical process by which a neutral is ionized thanks to the energy from the impact of an electron.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electrostatic",
+      "definition": "Collective longitudinal electric-field and plasma oscillations trapped within a body of plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ElectrostaticAnalyser",
+      "definition": "An instrument which uses charged plates to analyze the mass, charge and kinetic energies of charged particles which enter the instrument.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ElevationAngle",
+      "definition": "The angle between the position or measured vector and the I-J plane of the coordinate system. Mathematically defined as arctan(K/sqrt(I^2+J^2)).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Emissivity",
+      "definition": "The energy emitted spontaneously per unit bandwidth (typically frequency) per unit time per unit mass of source. Emissivity is usually integrated over all directions/solid angles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergeticParticleInstrument",
+      "definition": "An instrument that measures fluxes of charged particles as a function of time, direction of motion, mass, charge and/or species.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergeticParticles",
+      "definition": "Pieces of matter that are moving very fast. Energetic particles include protons, electrons, neutrons, neutrinos, the nuclei of atoms, and other sub-atomic particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Energy",
+      "definition": "The capacity for doing work as measured by the capability of doing work (potential energy) or the conversion of this capability to motion (kinetic energy).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyDensity",
+      "definition": "The amount of energy per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyFlux",
+      "definition": "The amount of energy passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyPerCharge",
+      "definition": "The kinetic energy, E, per unit net charge, q, that is E/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Entropy",
+      "definition": "A function of thermodynamic quantity, such as temperature, pressure, or composition, that is a measure of the energy that is not available for work during a thermodynamic process. It is often interpreted as the degree of disorder or randomness in the system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ephemeris",
+      "definition": "The spatial coordinates of a body as a function of time. When used as an Instrument Type it represents the process or methods used to generate spatial coordinates.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EquivalentWidth",
+      "definition": "The spectral width of a total absorption line having the amount of absorbed radiant energy being equivalent to that in an observed absorption line.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Experiment",
+      "definition": "A collection of components which are designed to make coordinated observations of a phenomenon or object. Projects and missions may refer to an \"experiment\" by other names such as a \"suite\".",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ExtremeUltraviolet",
+      "definition": "A spectrum with a wavelength range of 10 nm to 125 nm. VSO nickname: EUV image with a range of 10 nm to 125 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FarUltraviolet",
+      "definition": "A spectrum with a wavelength range of 122 nm to 200 nm. VSO nickname: FUV image with a range of 122 nm to 200 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FaradayCup",
+      "definition": "An instrument consisting of an electrode from which electrical current is measured while a charged particle beam (electrons or ions) impinges on it. Used to determine energy spectrum and sometimes ion composition of the impinging particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowSpeed",
+      "definition": "The magnitude of the flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowVelocity",
+      "definition": "The mean velocity of all particles in the flow, also referred to as bulk velocity or average flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Fluence",
+      "definition": "The time integral of a flux. A fluence is a not a measurement of flux per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FluxFeedback",
+      "definition": "A search coil whose bandwidth and signal/noise ratio are increased by the application of negative feedback at the sensor (flux) level by driving a collocated coil with a signal from the preamplifier.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FourierTransformSpectrograph",
+      "definition": "An instrument that determines the spectra of a radiative source, using time domain measurements and a Fourier transform.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Frequency",
+      "definition": "The number of occurrences of a repeating event per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FrequencyToGyrofrequencyRatio",
+      "definition": "The ratio of the characteristic frequency of a medium to gyrofrequency of a particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GammaRays",
+      "definition": "Photons with a wavelength range: 0.00001 nm to 0.001 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeigerMuellerTube",
+      "definition": "An instrument which measures density of ionizing radiation based on interactions with a gas.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeometricFactor",
+      "definition": "A measure of the gathering power of a particle detector. The geometric factor can be used to correct particle measurements by accounting for the fact that only a fraction of the source particles is able to gain entry through the aperture of a detector. For an isotopic source distribution, the geometric factor corresponds to the solid angle subtended by the aperture. In practice, determination of the geometric factor requires numerical modeling and depends on detector design and the characteristics of the source.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Gyrofrequency",
+      "definition": "The number of gyrations around a magnetic guiding center (field line) a charged particle makes per unit time due to the Lorentz force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Halpha",
+      "definition": "A spectrum with a wavelength range centered at 656.3 nm. VSO nickname: H-alpha image with a spectrum range of 655.8 nm to 656.8 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HardXRays",
+      "definition": "Photons with a wavelength range: 0.001 nm to 0.1 nm and an energy range of 12 keV to 120 keV.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "He10830",
+      "definition": "A spectrum with a wavelength range centered at 1082.9 nm. VSO nickname: an He 10830 image with a range of 1082.5 nm to 1083.3 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "He304",
+      "definition": "A spectrum centered around the resonance line of ionized helium at 304 Angstrom (30.4 nm).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HeatFlux",
+      "definition": "Flow of thermal energy through a gas or plasma typically computed as third moment of a distribution function.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Housekeeping",
+      "definition": "Parameters that indicate the status or health state of instruments or monitoring devices as measured in physical units such as that for current, voltage, or temperature. Housekeeping data can be analyzed to determine whether instruments are working correctly and the knowledge of their values may be used to avoid errors or even device failures.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Hydrodynamic",
+      "definition": "Periodic or quasi-periodic oscillations of fluid quantities.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IMFClockAngle",
+      "definition": "The clockwise angle of the direction of interplanetary magnetic field (IMF) measured in the plane of the body pole perpendicular to the line between the body and the Sun.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ImageIntensity",
+      "definition": "Measurements of the 2-D distribution of the intensity of photons from some region or object such as the Sun or the polar auroral regions, can be in any wavelength band, and polarized, etc.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Imager",
+      "definition": "An instrument which samples the radiation from an area at one or more spectral ranges emitted or reflected by an object.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ImagingSpectrometer",
+      "definition": "An instrument which is a multispectral scanner with a very large number of channels (typically from 64 channels up to 256 channels) with very narrow bandwidths.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Infrared",
+      "definition": "Photons with a wavelength range: 760 nm to 10^6 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InstrumentMode",
+      "definition": "An indication of a state (mode) in which the instrument is operating. How a mode influences the interpretation and representation of data is described in instrument related documentation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InstrumentStatus",
+      "definition": "A quantity directly related to the operation or function of an instrument.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Intensity",
+      "definition": "The measurement of radiant or wave energy per unit detector area per unit bandwidth per unit solid angle per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Interferometer",
+      "definition": "An instrument to study the properties of two or more waves from the pattern of interference created by their superposition.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ion",
+      "definition": "An atom that has acquired a net electric charge by gaining or losing one or more electrons (Note: Z>2).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IonChamber",
+      "definition": "A device in which the collected electrical charge from ionization in a gas-filled cavity is taken to be the proportion to some parameter (e.g., dose or exposure) of radiation field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IonComposition",
+      "definition": "In situ measurements of the relative flux or density of electrically charged particles in the space environment. May give simple fluxes, but full distribution functions are sometimes measured.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IonDrift",
+      "definition": "A device which measures the current produced by the displacement of ambient ions on a grid, thereby allowing the determination of the ion trajectory and velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IonGauge",
+      "definition": "A device which measures low-pressure or vacuum neutral gas with pressures ranging from 10^-3 Torr to 10^-10 Torr. An ion gauge is an electronic amplifying vacuum tube consisting of three electrodes inside an evacuated glass envelope, with the filament being the cathode.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Irradiance",
+      "definition": "A radiometric term for the power of electromagnetic radiation at a surface, per unit area. Irradiance is used when the electromagnetic radiation is incident on the surface. Irradiance data may be reported in any units (i.e., counts/s) due to, for example, being at a particular wavelength, or to being a not fully calibrated relative measurement.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "K7699",
+      "definition": "A spectrum with a wavelength range centered at 769.9 nm. VSO nickname: K-7699 dopplergram with a range of 769.8 nm to 770.0 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LBHBand",
+      "definition": "Lyman-Birge-Hopfield band in the far ultraviolet range with wavelength range of 140 nm to 170 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LShell",
+      "definition": "The L-shell is the magnetic equatorial radius (in units of planetary radii) of a dipole magnetic field line. For instance, if the L-shell value equals 6 say at Earth, the magnetic field lines cross the magnetic equator at six Earth radii. The L-shell concept can be applied generally to any magnetized planet or satellite with a dominant dipolar magnetic field moment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LangmuirProbe",
+      "definition": "A monopole antenna associated with an instrument. The instrument applies a potential to the antenna which is swept to determine the voltage/current characteristic. This provides information about the plasma surrounding the probe and spacecraft.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Lidar",
+      "definition": "Lidar (Light Detection and Ranging) is a class of instruments that uses laser light to study atmospheric properties from the ground up to the top of the atmosphere. Such instruments have been used to study atmospheric gases, aerosols, clouds, and temperature.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LineDepth",
+      "definition": "The measure of the amount of absorption below the continuum (depth) in a particular wavelength or frequency in an absorption spectrum.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Lines",
+      "definition": "A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a model volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through model space.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LongWire",
+      "definition": "A dipole antenna constructed by two active sensing elements that are wires deployed in the equatorial plane on opposite sides of a spinning spacecraft. The, wire length is usually several times the spacecraft diameter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LowerHybridFrequency",
+      "definition": "Lower hybrid oscillations involve longitudinal motions of electrons and ions in a magnetized plasma. The propagation of lower hybrid waves must be close to perpendicular to the background magnetic field in so that electrons cannot move along field lines thus preventing wave growth. The lower hybrid frequency, &phi;<sub>LH</sub>, can be calculated by using &phi;<sub>LH</sub>=[(&omega;<sub>ce</sub>&omega;<sub>ci</sub>)<sup>-1</sup>+&phi;<sub>pi</sub><sup>-2</sup>]<sup>-1/2</sup> where &omega;<sub>ce</sub> and &omega;<sub>ci</sub> are the electron and ion cyclotron frequencies, respectively, and $phi;<sub>LH</sub> is the ion plasma frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MHD",
+      "definition": "Hydrodynamic waves in a magnetized plasma in which the background magnetic field plays a key role in controlling the wave propagation characteristics.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetic",
+      "definition": "The physical attribute attributed to a magnet or its equivalent.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticField",
+      "definition": "A region of space near a magnetized body where magnetic forces can be detected (as measured by methods such as Zeeman splitting, etc.).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetogram",
+      "definition": "Measurements of the vector or line-of-sight magnetic field determined from remote sensing measurements of the detailed structure of spectral lines, including their splitting and polarization.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetograph",
+      "definition": "A special type of magnetometer that records a time plot of the local magnetic field near the instrument or a telescope capable of determining the magnetic field strength and/or direction on a distant object such as the Sun, using the Zeeman splitting or other spectral signatures of magnetization.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetometer",
+      "definition": "An instrument which measures the ambient magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagnetosonicMachNumber",
+      "definition": "The ratio of the velocity of fast mode waves to the Alfven velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Mass",
+      "definition": "The measure of inertia (mass) of individual objects (e.g., aerosols).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassDensity",
+      "definition": "The mass of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassNumber",
+      "definition": "The total number of protons and neutrons (together known as nucleons) in an atomic nucleus.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassPerCharge",
+      "definition": "The mass, m, per unit net charge, q, that is m/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassSpectrometer",
+      "definition": "An instrument which distinguishes chemical species in terms of their different isotopic masses.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MicrochannelPlate",
+      "definition": "An instrument used for the detection of elementary particles, ions, ultraviolet rays and soft X-rays constructed from very thin conductive glass capillaries.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Microwave",
+      "definition": "Photons with a wavelength range: 10^6 nm to 1.5*10^7 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ModeAmplitude",
+      "definition": "In helioseismology the magnitude of oscillation of waves of a particular geometry.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Molecule",
+      "definition": "A group of atoms so united and combined by chemical affinity that they form a complete, integrated whole, being the smallest portion of any particular compound that can exist in a free state.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MultispectralImager",
+      "definition": "An instrument which captures images at multiple spectral ranges.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Muon",
+      "definition": "An elementary particle similar to the electron, with an electric charge equal to -1 elementary charge, -e, and spin -1/2 h-bar with a much mass -206.7682827(46) times that of the electron rest mass, m sub e.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NaD",
+      "definition": "A spectrum with a wavelength range of centered at 589.3 nm. VSO nickname: Na-D image with a range of 588.8 nm to 589.8 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NeutralAtomImager",
+      "definition": "An instrument which measures the quantity and properties of neutral particles over a range of angles. Measured properties can include mass and energy.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NeutralAtomImages",
+      "definition": "Measurements of neutral atom fluxes as a function of look direction often related to remote energetic charged particles that lose their charge through charge-exchange and then reach the detector on a line-of-sight trajectory.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NeutralGas",
+      "definition": "Measurements of neutral atomic and molecular components of a gas.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NeutralParticleDetector",
+      "definition": "An instrument which measures the quantity and properties of neutral particles. Measured properties can include mass and plasma bulk densities.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Neutron",
+      "definition": "An elementary particle with neutral charge that is a constituent of atomic nuclei. Neutrons have a rest mass slightly large than that of a proton equal to about 1.67493*10^-24 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ni6768",
+      "definition": "A spectrum with a wavelength range centered at 676.8 nm. VSO nickname: Ni-6768 dopplergram with a range of 676.7 nm to 676.9 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberDensity",
+      "definition": "The number of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberFlux",
+      "definition": "The number of particles passing a unit area in unit time, possibly also per unit energy (or equivalent) and/or per unit look direction.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Optical",
+      "definition": "Photons with a wavelength range: 380 nm to 760 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Orientation",
+      "definition": "The specification of the directional alignment of an object or measurement in a reference coordinate system. The orientation such as a spacecraft spin axis attitude is usually expressed as one or more angles relative to the basis axes of some specified physical space usually together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Other",
+      "definition": "Not classified with more specific terms. The context of its usage may be described in related text.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleCorrelator",
+      "definition": "An instrument which correlates particle flux to help identify wave/particle interactions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleDetector",
+      "definition": "An instrument which detects particle flux!!!.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRadius",
+      "definition": "The mean radius for a Gaussian distribution of particles with an axial ratio of 2 and a distribution width that varies as 0.5 radius. A value of zero means no cloud was detected.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRigidity",
+      "definition": "The particle momentum per unit charge. The particle Rigidity, R, is equal to pc/Ze.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhaseSpaceDensity",
+      "definition": "The number of particles per unit volume in the six-dimensional space of position and velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhotoIonization",
+      "definition": "Chemical process by which a neutral is ionized thanks to the energy from a photon.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photometer",
+      "definition": "An instrument which measures the strength of electromagnetic radiation within a spectral band which can range from ultraviolet to infrared and includes the visible spectrum.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhotomultiplierTube",
+      "definition": "A vacuum phototube that is an extremely sensitive detector of light in the ultraviolet, visible, and near-infrared ranges of the electromagnetic spectrum.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photon",
+      "definition": "Electromagnetic waves detected by techniques that utilize their corpuscular character (e.g., CCD, CMOS, or Photomultiplier).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photopolarimeter",
+      "definition": "An instrument which measures the intensity and polarization or radiant energy. A photopolarimeter is a combination of a photometer and a polarimeter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaBeta",
+      "definition": "The ratio of the plasma pressure (nkT) to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a single component plasma or the ratio of the plasma pressure sum over i of (n<sub>i</sub>kT<sub>i</sub>) for all species i to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a multi components plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaFrequency",
+      "definition": "A number density dependent characteristic frequency of a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaWaves",
+      "definition": "Self-consistent collective oscillations of particles and fields (electric and magnetic) in a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Platform",
+      "definition": "A collection of components which can be positioned and oriented as a single unit. A platform may contain other platforms. For example, a spacecraft is a platform which may have components that can be articulated and are also considered platforms.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PolarAngle",
+      "definition": "The angle between the position or measured vector and the k-axis of the coordinate system. Mathematically defined as arctan([sqrt(i^2+j^2)]/k). This term could be also applied to angles between the vector and other components, for example the IMF cone angle defined as arccos(B<sub>x</sub>/B<sub>t</sub>).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Polarization",
+      "definition": "Direction of the electric vector of an electromagnetic wave. The wave can be linearly polarized in any direction perpendicular to the direction of travel, circularly polarized (clockwise or counterclockwise), unpolarized, or mixtures of the above.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Positional",
+      "definition": "The specification of the location of an object or measurement within a reference coordinate system. The position is usually expressed as a set of values corresponding to the location along a set of orthogonal axes together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Positron",
+      "definition": "An elementary particle that has a positive charge equal to about 1.60218*10^-19 C and a rest mass equal to about 9.10938*10^-31 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Potential",
+      "definition": "The work required per unit charge to move a charge from a reference point to a point at infinity (electric potential is defined to be zero). The electric potential of a spacecraft is often referred to as the spacecraft potential. The spacecraft potential is the electric potential of the spacecraft relative to the potential of the nearby plasma. The spacecraft potential is non-zero because the spacecraft charges to the level that the emitted photoelectron flux going to infinity is balanced by the plasma electron flux to the spacecraft.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PoyntingFlux",
+      "definition": "Electromagnetic energy flux transported by a wave characterized as the rate of energy transport per unit area per steradian.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Pressure",
+      "definition": "The force per unit area exerted by a particle distribution or field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Profile",
+      "definition": "Measurements of a quantity as a function of height above an object such as the limb of a body.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PropagationTime",
+      "definition": "Time difference between transmission and reception of a wave in an active wave experiment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ProportionalCounter",
+      "definition": "An instrument which measures energy of ionization radiation based on interactions with a gas.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Proton",
+      "definition": "An elementary particle that is a constituent of all atomic nuclei. Protons have a positive charge equal to about 1.60218*10^-19 C and a rest mass equal to about 1.67262*10^-27 kg.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "QuadrisphericalAnalyser",
+      "definition": "An instrument used for the 3-D detection of plasma, energetic electrons and ions, and for positive ion composition measurements.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Radar",
+      "definition": "An instrument that uses directional properties of returned power to infer spatial and/or other characteristics of a remote object.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Radiance",
+      "definition": "A radiometric measurement that describes the amount of electromagnetic radiation that passes through or is emitted from a particular area, and falls within a given solid angle in a specified direction. They are used to characterize both emission from diffuse sources and reflection from diffuse surfaces.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RadioFrequency",
+      "definition": "Photons with a wavelength range: 10^5 nm to 10^11 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Radiometer",
+      "definition": "An instrument for detecting or measuring radiant energy. Radiometers are commonly limited to infrared radiation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Rate",
+      "definition": "Reaction rate: reaction production per unit of time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Remark",
+      "definition": "A notice, comment, or observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ResonanceSounder",
+      "definition": "A combination of a radio receiver and a pulsed transmitter used to study the plasma surrounding a spacecraft by identifying resonances or cut-offs (of the wave dispersion relation), whose frequencies are related to the ambient plasma density and magnetic field. When the transmitter is off it is essentially a high-frequency resolution spectral power receiver.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RetardingPotentialAnalyser",
+      "definition": "An instrument which measures ion temperatures and ion concentrations using a planar ion trap.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Riometer",
+      "definition": "An instrument which measures the signal strength in various directions of the galactic radio signals. Variations in these signals are influenced by solar flare activity and geomagnetic storm and substorm processes.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RotationMatrix",
+      "definition": "A tensor that is used to perform vector data transformation from one coordinate system to another.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SPICE",
+      "definition": "SPICE is an ancillary information system that provides scientists and engineers the capability to include space geometry and event data into mission design, science observation planning, and science data analysis software. The staff of the NASA Navigation and Ancillary Information Facility, NAIF, which is located at JPL provides SPICE support for planetary, heliophysics, and Earth science missions, see https://naif.jpl.nasa.gov/naif/index.html. This SPICE has been adapted from text on NAF hosted web pages.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ScintillationDetector",
+      "definition": "An instrument which detects fluorescence of a material which is excited by high-energy (ionizing) electromagnetic or charged particle radiation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SearchCoil",
+      "definition": "An instrument which measures the time variation of the magnetic flux threading a loop by measurement of the electric potential difference induced between the ends of the wire.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SoftXRays",
+      "definition": "X-Rays with an energy range of 0.12 keV to 12 keV.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolarUVFlux",
+      "definition": "The amount of ultraviolet energy originating from the Sun passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolidStateDetector",
+      "definition": "A detector of the charge carriers (electrons and holes) generated in semiconductors by energy deposited by gamma ray photons. Also known as a semiconductor detector\".",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SonicMachNumber",
+      "definition": "The ratio of the bulk flow speed to the speed of sound in the medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SoundSpeed",
+      "definition": "The speed at which sound travels through a medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Sounder",
+      "definition": "An instrument which measures the radiances from an object. A sounder may measure radiances at multiple spectral ranges.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpacecraftPotentialControl",
+      "definition": "An instrument to control the electric potential of a spacecraft with respect to the ambient plasma by emitting a variable current of positive ions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpatialSeries",
+      "definition": "A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a spacial volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Spectra",
+      "definition": "A term that applies to any signal that can be measured or decomposed along a continuous variable such as the electromagnetic radiation which can be decomposed as a function of wavelength or frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpectralPowerReceiver",
+      "definition": "A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Spectrometer",
+      "definition": "An instrument that measures the component wavelengths of light (or other electromagnetic radiation) by splitting the light up into its component wavelengths.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Spectrum",
+      "definition": "The distribution of a characteristic of a physical system or phenomenon, such as the energy emitted by a radiant source, arranged in the order of wavelengths.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinPeriod",
+      "definition": "The time required for an object such as a spacecraft or planet to perform one full rotation in a given frame of reference.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinPhase",
+      "definition": "An angular based or normalized parameter that specifies the spin state of an object such as a spacecraft or planet in a specific coordinate system usually together with the date/time of the observation.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpinRate",
+      "definition": "The angular rate of change of the spin angle of an object such as a spacecraft or planet.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "StokesParameters",
+      "definition": "A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Telemetry",
+      "definition": "Parameters that include full packets of data from monitoring devices or the memory addresses of datum within telemetry packets. The data comprising telemetry packets are typically expressed by using non-physical engineering units and may be used to express a variety of device operating conditions such as command acceptance/execution, housekeeping, event characterization, memory dumps, and science data. Telemetry packets may be raw or unpacked.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Temperature",
+      "definition": "A measure of the kinetic energy of random motion with respect to the average. Temperature is properly defined only for an equilibrium particle distribution (Maxwellian distribution).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Temporal",
+      "definition": "Pertaining to time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ThermalPlasma",
+      "definition": "Measurements of the plasma in the energy regime where the most of the plasma occurs. May be the basic fluxes in the form of distribution functions or the derived bulk parameters (density, flow velocity, etc.).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ThermalSpeed",
+      "definition": "A characteristic fluctuation speed of a distribution of particles about the bulk flow speed of the distribution. The value of the thermal speed depends on the dimensions and temperature of the distribution. Specific quantitative definition of thermal speed must be provided by the provider of a resource to be described in SPASE. [Note: Its quantitative definition depends on the nature of the particle distribution and how the random speed is characterized or calculated and must be specified in the description of the quantity used in the product described by the SPASE document].",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TimeOfFlight",
+      "definition": "An instrument which measures the time it takes for a particle to travel between two detectors.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TotalPressure",
+      "definition": "In an MHD fluid it is the number density (N) times Boltzmann constant times the temperature in Kelvin.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ultraviolet",
+      "definition": "Photons with a wavelength range: 10 nm to 400 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Unspecified",
+      "definition": "A value which is not provided.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "UpperHybridFrequency",
+      "definition": "Upper hybrid oscillations involve longitudinal motions of electrons perpendicular to the magnetic field. The upper hybrid frequency, &phi;<sub>UH</sub>, is governed by the relationship &phi;<sub>UH</sub>^2=&phi;<sub>pe</sub>^2+&theta;<sub>ce</sub>^2 where &phi;<sub>pe</sub> is electron plasma frequency and &theta;<sub>ce</sub> is the electron cyclotron frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VCrossB",
+      "definition": "The cross product of the charge velocity (V) and the magnetic field (B). It is the electric field exerted on a point charge by a magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Velocity",
+      "definition": "Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VolumeEmissionRate",
+      "definition": "The volume emission rate, e(r,t,l), is the number of photons emitted per unit source volume per second (photons/m^3/s), as measured along the line of sight between the source point and the observer. The Volume Emission Rate is in general a function of the line-of-sight distance, r, time, t, and wavelength, l. The Volume Emission Rate is actually not a directly measurable quantity. However, the term has been commonly used in both data product descriptions and research publications.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WavePhase",
+      "definition": "Position of a wave within its cycle at a given point in time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WaveformReceiver",
+      "definition": "A radio receiver which outputs the value of one or more components of the electric and/or magnetic field as a function of time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Wavelength",
+      "definition": "The peak-to-peak distance over one wave period.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Waves",
+      "definition": "Data resulting from observations of wave experiments and natural wave phenomena. Wave experiments are typically active and natural wave phenomena are passive. Examples of wave experiments include coherent/incoherent scatter radars, radio soundings, VLF propagation studies, ionospheric scintillation of beacon satellite signals, etc. Examples of natural wave phenomena include micropulsations, mesospheric gravity waves, auroral/plasmaspheric hiss, Langmuir waves, AKR, Jovian decametric radiation, solar radio bursts, etc.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Active",
+      "definition": "Exerting an influence or producing a change or effect. An active measurement is one which produces a transmission or excitation as a part of the measurement cycle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "altLabel": [
+        "Waves.Active"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Passive",
+      "definition": "Movement or effect produced by outside influence. A passive measurement is one which does not produce a transmission or excitation as a part of the measurement cycle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity",
+      "altLabel": [
+        "Waves.Passive"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WebResource",
+      "definition": "A Web page or file-based resource accessible by a URL.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WebService",
+      "definition": "A Web-based service that uses SOAP, WSDL or UDDI open standards.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WhiteLight",
+      "definition": "Photons with a wavelength in the visible range for humans.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "XRays",
+      "definition": "Photons with a wavelength range: 0.001 nm to 10 nm.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ParameterQuantity"
+    }
+  ]
+}

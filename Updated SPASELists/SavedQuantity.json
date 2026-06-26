@@ -1,0 +1,549 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity",
+      "@type": "ConceptScheme",
+      "title": "SavedQuantity",
+      "description": "Quantities that are saved during a given diagnosis.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "2DCuts",
+      "definition": "A set of 2-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a model volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "3DCubes",
+      "definition": "A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a model volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACElectricField",
+      "definition": "Alternating electric field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ACMagneticField",
+      "definition": "Alternating magnetic field component of a wave.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Absorption",
+      "definition": "Decrease of radiant energy (relative to the background continuum spectrum).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AdiabaticInvariant",
+      "definition": "A property of a physical system usually related to periodic phenomena that remains constant under slowly varying conditions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BounceMotion",
+      "definition": "The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J=m &int; v||*ds where m is the mass of the charged particle, v|| is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.BounceMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DriftMotion",
+      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.DriftMotion"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticMoment",
+      "definition": "A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower-case Greek letter for mu and can be calculated by using mu equal to m(u^2/2B) where m is the particle mass, u is the velocity of the particle perpendicular to the constant or average magnetic field direction, and B is the magnitude of the magnetic field strength.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity",
+      "altLabel": [
+        "AdiabaticInvariant.MagneticMoment"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AkasofuEpsilon",
+      "definition": "A measure of the magnetopause energy flux and an indicator of the solar wind power available for subsequent magnetospheric energization. Defined as: V*B^2*l^2sin(theta/2)^4 where B is the IMF, l is an empirical scaling parameter equal to 7 R<sub>E</sub>, and theta=tan(By/Bz)^-1 the IMF clock angle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Albedo",
+      "definition": "The ratio of reflected radiation from the surface to incident radiation upon it.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenMachNumber",
+      "definition": "The ratio of the bulk flow speed to the Alfven speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AlfvenVelocity",
+      "definition": "Phase velocity of the Alfven wave. In SI units it is the velocity of the magnetic field divided by the square root of the mass density times the permeability of free space (&mu;<sub>0</sub>).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ArrivalDirection",
+      "definition": "An angular measure of the direction from which an energetic particle or photon was incident on a detector. The angles may be measured in any coordinate system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AtomicNumberDetected",
+      "definition": "The number of protons in the nucleus of an atom as determined by a detector.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "AverageChargeState",
+      "definition": "A measure of the composite deficit (positive) or excess (negative) of electrons with respect to protons.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeFlux",
+      "definition": "The number of ionized particles passing through a unit area per unit time, for instance as measured by a Faraday cup.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ChargeState",
+      "definition": "Charge of a fully or partially stripped ion, in units of the charge of a proton. Charge state of a bare proton is equal to one.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CountRate",
+      "definition": "The number of events per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Counts",
+      "definition": "The number of detection events occurring in a detector over the detector accumulation time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Current",
+      "definition": "It is the scalar quantity giving the net charge (summed over charged particle species) per unit time flowing across a given surface.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CurrentDensity",
+      "definition": "It is the vector quantity giving the net charge (summed over charged particle species) per unit cross-sectional area per unit time flowing through a given point. Measurements of current density are often provided in terms of the magnetic perturbations (superposed upon a background magnetic field, if present) associated with the current density.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DopplerFrequency",
+      "definition": "Change in the frequency of a propagating wave due to motion of the source, the observer, the reflector, or the propagation medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DynamicPressure",
+      "definition": "Dynamic pressure is a measure of the kinetic energy per unit volume of a fluid. For instance, the solar wind dynamic pressure or ram pressure for a purely proton plasma is equal to m<sub>p</sub> n V<sup>2</sup> where m<sub>p</sub> is the proton mass, n is the proton number density, and V is the solar wind speed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electric",
+      "definition": "The physical attribute that exerts an electrical force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Electromagnetic",
+      "definition": "Electric and magnetic field variations in time and space that propagate through a medium or a vacuum. The wave propagation direction, electric field vector, and magnetic field vector form an orthogonal triad. Waves in this category are detected by having their field quantities measured.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Emissivity",
+      "definition": "The energy emitted spontaneously per unit bandwidth (typically frequency) per unit time per unit mass of source. Emissivity is usually integrated over all directions/solid angles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Energy",
+      "definition": "The capacity for doing work as measured by the capability of doing work (potential energy) or the conversion of this capability to motion (kinetic energy).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyDensity",
+      "definition": "The amount of energy per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyFlux",
+      "definition": "The amount of energy passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergyPerCharge",
+      "definition": "The kinetic energy, E, per unit net charge, q, that is E/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Entropy",
+      "definition": "A function of thermodynamic quantity, such as temperature, pressure, or composition, that is a measure of the energy that is not available for work during a thermodynamic process. It is often interpreted as the degree of disorder or randomness in the system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EquivalentWidth",
+      "definition": "The spectral width of a total absorption line having the amount of absorbed radiant energy being equivalent to that in an observed absorption line.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowSpeed",
+      "definition": "The magnitude of the flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FlowVelocity",
+      "definition": "The mean velocity of all particles in the flow, also referred to as bulk velocity or average flow velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Fluence",
+      "definition": "The time integral of a flux. A fluence is a not a measurement of flux per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Frequency",
+      "definition": "The number of occurrences of a repeating event per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "FrequencyToGyrofrequencyRatio",
+      "definition": "The ratio of the characteristic frequency of a medium to gyrofrequency of a particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeometricFactor",
+      "definition": "A measure of the gathering power of a particle detector. The geometric factor can be used to correct particle measurements by accounting for the fact that only a fraction of the source particles is able to gain entry through the aperture of a detector. For an isotopic source distribution, the geometric factor corresponds to the solid angle subtended by the aperture. In practice, determination of the geometric factor requires numerical modeling and depends on detector design and the characteristics of the source.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Gyrofrequency",
+      "definition": "The number of gyrations around a magnetic guiding center (field line) a charged particle makes per unit time due to the Lorentz force.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "HeatFlux",
+      "definition": "Flow of thermal energy through a gas or plasma typically computed as third moment of a distribution function.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "IMFClockAngle",
+      "definition": "The clockwise angle of the direction of interplanetary magnetic field (IMF) measured in the plane of the body pole perpendicular to the line between the body and the Sun.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Intensity",
+      "definition": "The measurement of radiant or wave energy per unit detector area per unit bandwidth per unit solid angle per unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LShell",
+      "definition": "The L-shell is the magnetic equatorial radius (in units of planetary radii) of a dipole magnetic field line. For instance, if the L-shell value equals 6 say at Earth, the magnetic field lines cross the magnetic equator at six Earth radii. The L-shell concept can be applied generally to any magnetized planet or satellite with a dominant dipolar magnetic field moment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LineDepth",
+      "definition": "The measure of the amount of absorption below the continuum (depth) in a particular wavelength or frequency in an absorption spectrum.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Lines",
+      "definition": "A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a model volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through model space.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "LowerHybridFrequency",
+      "definition": "Lower hybrid oscillations involve longitudinal motions of electrons and ions in a magnetized plasma. The propagation of lower hybrid waves must be close to perpendicular to the background magnetic field in so that electrons cannot move along field lines thus preventing wave growth. The lower hybrid frequency, &phi;<sub>LH</sub>, can be calculated by using &phi;<sub>LH</sub>=[(&omega;<sub>ce</sub>&omega;<sub>ci</sub>)<sup>-1</sup>+&phi;<sub>pi</sub><sup>-2</sup>]<sup>-1/2</sup> where &omega;<sub>ce</sub> and &omega;<sub>ci</sub> are the electron and ion cyclotron frequencies, respectively, and $phi;<sub>LH</sub> is the ion plasma frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetic",
+      "definition": "The physical attribute attributed to a magnet or its equivalent.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticField",
+      "definition": "A region of space near a magnetized body where magnetic forces can be detected (as measured by methods such as Zeeman splitting, etc.).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagnetosonicMachNumber",
+      "definition": "The ratio of the velocity of fast mode waves to the Alfven velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Mass",
+      "definition": "The measure of inertia (mass) of individual objects (e.g., aerosols).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassDensity",
+      "definition": "The mass of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassNumber",
+      "definition": "The total number of protons and neutrons (together known as nucleons) in an atomic nucleus.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MassPerCharge",
+      "definition": "The mass, m, per unit net charge, q, that is m/q, for an electron or an ionized atom, molecule, or dust particle.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ModeAmplitude",
+      "definition": "In helioseismology the magnitude of oscillation of waves of a particular geometry.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberDensity",
+      "definition": "The number of particles per unit volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumberFlux",
+      "definition": "The number of particles passing a unit area in unit time, possibly also per unit energy (or equivalent) and/or per unit look direction.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Other",
+      "definition": "Not classified with more specific terms. The context of its usage may be described in related text.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRadius",
+      "definition": "The mean radius for a Gaussian distribution of particles with an axial ratio of 2 and a distribution width that varies as 0.5 radius. A value of zero means no cloud was detected.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ParticleRigidity",
+      "definition": "The particle momentum per unit charge. The particle Rigidity, R, is equal to pc/Ze.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PhaseSpaceDensity",
+      "definition": "The number of particles per unit volume in the six-dimensional space of position and velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaBeta",
+      "definition": "The ratio of the plasma pressure (nkT) to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a single component plasma or the ratio of the plasma pressure sum over i of (n<sub>i</sub>kT<sub>i</sub>) for all species i to the magnetic pressure (B^2/2&mu;<sub>0</sub>) in a multi components plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PlasmaFrequency",
+      "definition": "A number density dependent characteristic frequency of a plasma.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Polarization",
+      "definition": "Direction of the electric vector of an electromagnetic wave. The wave can be linearly polarized in any direction perpendicular to the direction of travel, circularly polarized (clockwise or counterclockwise), unpolarized, or mixtures of the above.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Potential",
+      "definition": "The work required per unit charge to move a charge from a reference point to a point at infinity (electric potential is defined to be zero). The electric potential of a spacecraft is often referred to as the spacecraft potential. The spacecraft potential is the electric potential of the spacecraft relative to the potential of the nearby plasma. The spacecraft potential is non-zero because the spacecraft charges to the level that the emitted photoelectron flux going to infinity is balanced by the plasma electron flux to the spacecraft.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PoyntingFlux",
+      "definition": "Electromagnetic energy flux transported by a wave characterized as the rate of energy transport per unit area per steradian.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Pressure",
+      "definition": "The force per unit area exerted by a particle distribution or field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "PropagationTime",
+      "definition": "Time difference between transmission and reception of a wave in an active wave experiment.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolarUVFlux",
+      "definition": "The amount of ultraviolet energy originating from the Sun passing through a unit area in a unit time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SonicMachNumber",
+      "definition": "The ratio of the bulk flow speed to the speed of sound in the medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SoundSpeed",
+      "definition": "The speed at which sound travels through a medium.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SpatialSeries",
+      "definition": "A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a spacial volume.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Spectra",
+      "definition": "A term that applies to any signal that can be measured or decomposed along a continuous variable such as the electromagnetic radiation which can be decomposed as a function of wavelength or frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "StokesParameters",
+      "definition": "A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Temperature",
+      "definition": "A measure of the kinetic energy of random motion with respect to the average. Temperature is properly defined only for an equilibrium particle distribution (Maxwellian distribution).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ThermalSpeed",
+      "definition": "A characteristic fluctuation speed of a distribution of particles about the bulk flow speed of the distribution. The value of the thermal speed depends on the dimensions and temperature of the distribution. Specific quantitative definition of thermal speed must be provided by the provider of a resource to be described in SPASE. [Note: Its quantitative definition depends on the nature of the particle distribution and how the random speed is characterized or calculated and must be specified in the description of the quantity used in the product described by the SPASE document].",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TotalPressure",
+      "definition": "In an MHD fluid it is the number density (N) times Boltzmann constant times the temperature in Kelvin.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "UpperHybridFrequency",
+      "definition": "Upper hybrid oscillations involve longitudinal motions of electrons perpendicular to the magnetic field. The upper hybrid frequency, &phi;<sub>UH</sub>, is governed by the relationship &phi;<sub>UH</sub>^2=&phi;<sub>pe</sub>^2+&theta;<sub>ce</sub>^2 where &phi;<sub>pe</sub> is electron plasma frequency and &theta;<sub>ce</sub> is the electron cyclotron frequency.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VCrossB",
+      "definition": "The cross product of the charge velocity (V) and the magnetic field (B). It is the electric field exerted on a point charge by a magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Velocity",
+      "definition": "Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "VolumeEmissionRate",
+      "definition": "The volume emission rate, e(r,t,l), is the number of photons emitted per unit source volume per second (photons/m^3/s), as measured along the line of sight between the source point and the observer. The Volume Emission Rate is in general a function of the line-of-sight distance, r, time, t, and wavelength, l. The Volume Emission Rate is actually not a directly measurable quantity. However, the term has been commonly used in both data product descriptions and research publications.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WavePhase",
+      "definition": "Position of a wave within its cycle at a given point in time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Wavelength",
+      "definition": "The peak-to-peak distance over one wave period.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#SavedQuantity"
+    }
+  ]
+}

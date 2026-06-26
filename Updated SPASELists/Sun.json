@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun",
+      "@type": "ConceptScheme",
+      "title": "Sun",
+      "description": "Identifiers for regions of the star upon which our solar system is centered.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Chromosphere",
+      "definition": "The region of the solar (or stellar) atmosphere above the temperature minimum and below the Transition Region. The solar chromosphere is approximately 400 km to 2100 km above the photosphere, and characterized by temperatures that range from 4500 K to 28000 K.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Corona",
+      "definition": "The outermost atmospheric region of the Sun or a star, characterized by ionization temperatures above 10^5 K. The solar corona starts at about 2100 km above the photosphere. There is no generally defined upper limit.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Interior",
+      "definition": "The region inside the body which is not visible from outside the body.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Photosphere",
+      "definition": "The atmospheric layer of the Sun or a star from which continuum radiation, especially optical, is emitted to space. For the Sun, the photosphere is about 500 km thick.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TransitionRegion",
+      "definition": "A very narrow (<100 km) layer between the chromosphere and the corona where the temperature rises abruptly from about 8000 to about 500,000 K.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Sun"
+    }
+  ]
+}

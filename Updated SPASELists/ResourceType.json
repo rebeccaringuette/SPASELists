@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType",
+      "@type": "ConceptScheme",
+      "title": "ResourceType",
+      "description": "Identifiers for all SPASE resource types.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Annotation",
+      "definition": "Information which is explanatory or descriptive which is associated with another resource.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Catalog",
+      "definition": "A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data. Catalogs include lists of events, files in a product, and data availability. A Catalog resource is a type of \"data product\" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Collection",
+      "definition": "An aggregation of resources, which may encompass collections of one resource type as well as those of mixed types. A collection is described as a group. Its parts may also be separately described. An example is an experiment which uses the data from multiple instruments (or sensors). Another example is a research effort that uses a set of display images of the Sun and Energetic particle data from the corresponding times for the images, and FITS files of AIA images, etc. All the resources that are part of the research effort can be described as a Collection. Yet another example is a coordinated set of time series used for determining an index.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DisplayData",
+      "definition": "A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis. Examples are line plots and spectrograms. A Display Data resource is a type of \"data product\" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DisplayOutput",
+      "definition": "A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis. Examples are line plots and spectrograms. A Display Data resource is a type of \"data product\" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Document",
+      "definition": "A set of information designed and presented as an individual entity. A document may contain plain or formatted text, in-line graphics, sound, other multimedia data, or hypermedia references. A Document resource is intended for use on digital objects that have no other identifier (e.g., DOI or ISBN).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Granule",
+      "definition": "An accessible portion of another resource. A Granule may be composed of one or more physical pieces (files) which are considered inseparable. For example, a data storage format that maintains metadata and binary data in separate, but tightly coupled files. Granules should not be used to group files that have simple relationships or which are associated through a parent resource. For example, each file containing a time interval data for a Numerical Data resource would each be considered a Granule. The ParentID of a Granule resource must be a NumericalData resource. The attributes of a Granule supersede the corresponding attributes in the NumericalData resource.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Instrument",
+      "definition": "A device that makes measurements used to characterize a physical phenomenon, or a family of like devices.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Model",
+      "definition": "Attributes of a model.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ModelRun",
+      "definition": "Description of a model run, including the code ID, the run spatial and temporal description, and all the relevant inputs.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumericalData",
+      "definition": "Data stored as numerical values in one or more specified formats. A Numerical Data resource is a type of \"data product\" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of Parameters stored in a collection of granules of successive time spans or a single data granule.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "NumericalOutput",
+      "definition": "Data stored as numerical values in a specified format. A Numerical Data resource is a type of \"data product\" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Observatory",
+      "definition": "The host (spacecraft, network, facility) for instruments making observations, or a family of closely related hosts.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Person",
+      "definition": "An individual human being.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Registry",
+      "definition": "A location or facility where resources are cataloged.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Repository",
+      "definition": "A location or facility where resources are stored.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Service",
+      "definition": "A location or facility that can perform a well-defined task.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Software",
+      "definition": "An application which can be installed, built or readily used.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#ResourceType"
+    }
+  ]
+}

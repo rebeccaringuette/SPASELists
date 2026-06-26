@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "@type": "ConceptScheme",
+      "title": "Jupiter",
+      "description": "Identifiers for the regions surrounding the planet Jupiter.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Amalthea",
+      "definition": "The fifth largest moon of Jupiter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Callisto",
+      "definition": "A second largest moon of Jupiter and the third largest moon in the solar system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Europa",
+      "definition": "The sixth closest round moon of Jupiter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Ganymede",
+      "definition": "The biggest moon of Jupiter and in the solar system.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Io",
+      "definition": "The innermost of the four round moons of the planet Jupiter.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetosphere",
+      "definition": "The region of space above the atmosphere or surface of the planet and bounded by the magnetopause that is under the direct influence of the magnetic field of a planetary body.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Magnetotail",
+      "definition": "The region of space within the magnetosphere of a magnetized planetary body where the nightside magnetic field is stretched out in the anti-stellar direction by stellar wind interaction into a windsock-like shape. For Earth, solar wind-magnetosphere interaction produces a magnetotail that extends tailward from a distance of about 10 R<sub>E</sub> on the nightside to downstream distances beyond 1000 R<sub>E</sub>.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.Magnetotail"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Main",
+      "definition": "The region of the magnetosphere where the magnetic field lines are closed, but does not include the gaseous region gravitationally bound to the body.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.Main"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Plasmasphere",
+      "definition": "A region of the magnetosphere consisting of low energy (cool) plasma. It is located above the ionosphere. The outer boundary of the plasmasphere is known as the plasmapause, which is defined by an order of magnitude drop in plasma density.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.Plasmasphere"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Polar",
+      "definition": "The region near the pole of a body. For a magnetosphere the polar region is the area where magnetic field lines are open and includes the auroral zone.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.Polar"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RadiationBelt",
+      "definition": "The region within a magnetosphere where high-energy particles could potentially be trapped in a magnetic field.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.RadiationBelt"
+      ]
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RingCurrent",
+      "definition": "One of the major current systems confined within planetary magnetospheres. The ring current circles in the magnetic equatorial plane of magnetospheres. It is generated by the longitudinal drift of energetic charged particles trapped on inner, dipole-like magnetospheric field lines. At the Earth, the ring current is carried by 10 keV to 200 keV charged particles typically located at L-shells between 3 and 6. The ring current is also the primary driver of the Sym H and Dst Indices of magnetic storm activity at the Earth.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Jupiter",
+      "altLabel": [
+        "Magnetosphere.RingCurrent"
+      ]
+    }
+  ]
+}
