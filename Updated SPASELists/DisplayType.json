@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType",
+      "@type": "ConceptScheme",
+      "title": "DisplayType",
+      "description": "Identifiers for types or classes of rendered data.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Image",
+      "definition": "A 2-D representation of data with values at each element of the array related to an intensity or a color.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Plasmagram",
+      "definition": "The characterization of signal strengths in active sounding measurements as a function of virtual range or signal delay time and sounding frequency. A Plasmagram is also referred to as an Ionogram.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Spectrogram",
+      "definition": "The characterization of signal strengths as a function of frequency (or energy) and time.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "StackPlot",
+      "definition": "A representation of data showing multiple sets of observations on a single plot, possibly offsetting each plot by some uniform amount.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TimeSeries",
+      "definition": "A representation of data showing a set of observations taken at different points in time and charted as a time series.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "WaveForm",
+      "definition": "Spatial or temporal variations of wave amplitude over wave period time scales.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#DisplayType"
+    }
+  ]
+}

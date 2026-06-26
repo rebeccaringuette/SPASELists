@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Text",
+      "@type": "ConceptScheme",
+      "title": "Text",
+      "description": "Identifiers for the encoding of sequences of characters.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ASCII",
+      "definition": "A sequence of characters that adheres to American Standard Code for Information Interchange (ASCII) which is a 7-bit character-coding scheme.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Text"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Unicode",
+      "definition": "Text in multi-byte Unicode format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Text"
+    }
+  ]
+}

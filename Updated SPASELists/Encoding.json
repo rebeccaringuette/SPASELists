@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding",
+      "@type": "ConceptScheme",
+      "title": "Encoding",
+      "description": "Identifiers for unambiguous rules that establishes the representation of information within a file.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ASCII",
+      "definition": "A sequence of characters that adheres to American Standard Code for Information Interchange (ASCII) which is a 7-bit character-coding scheme.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Base64",
+      "definition": "A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in Internet e-mail. The only characters used are the upper-case and lower-case Roman alphabet characters (A-z), the numerals (0-9), and the \"+\" and \"/\" symbols, with the \"=\" symbol as a special suffix (padding) code.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BZIP2",
+      "definition": "An open standard algorithm by Julian Seward using Burrows-Wheeler block sorting and Huffman coding, see http://www.bzip.org/.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GZIP",
+      "definition": "An open standard algorithm distributed by GHU based on LZ77 and Huffman coding, see http://www.gnu.org/software/gzip/gzip.html or http://www.gzip.org/.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "None",
+      "definition": "A lack or absence of anything.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "S3_BUCKET",
+      "definition": "A container of objects that comply with the Amazon Simple Storage Service (S3) specifications. A bucket has a unique, user-assigned key (name). A bucket can contain any number of objects with an aggregate size of 5 gigabytes. A bucket may be accompanied by up to 2 kilobytes of metadata.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "TAR",
+      "definition": "A file format used to collate collections of files into one larger file, for distribution or archiving, while preserving file system information such as user and group permissions, dates, and directory structures. The format was standardized by POSIX.1-1988 and later POSIX.1-2001.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Unicode",
+      "definition": "Text in multi-byte Unicode format.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ZIP",
+      "definition": "An open standard for compression which is a variation of the LZW method and was originally used in the PKZIP utility.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#Encoding"
+    }
+  ]
+}

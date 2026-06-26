@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AdiabaticInvariant",
+      "@type": "ConceptScheme",
+      "title": "AdiabaticInvariant",
+      "description": "Identifiers for properties of a physical system related to periodic phenomena that remains constant under slowly varying conditions.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BounceMotion",
+      "definition": "The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J=m &int; v||*ds where m is the mass of the charged particle, v|| is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AdiabaticInvariant"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "DriftMotion",
+      "definition": "The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AdiabaticInvariant"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticMoment",
+      "definition": "A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower-case Greek letter for mu and can be calculated by using mu equal to m(u^2/2B) where m is the particle mass, u is the velocity of the particle perpendicular to the constant or average magnetic field direction, and B is the magnitude of the magnetic field strength.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#AdiabaticInvariant"
+    }
+  ]
+}

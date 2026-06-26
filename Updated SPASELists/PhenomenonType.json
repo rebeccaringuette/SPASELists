@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "Concept": {
+      "@id": "skos:Concept"
+    },
+    "ConceptScheme": {
+      "@id": "skos:ConceptScheme"
+    },
+    "title": {
+      "@id": "skos:prefLabel"
+    },
+    "description": {
+      "@id": "skos:definition"
+    },
+    "creator": {
+      "@id": "dct:creator"
+    },
+    "prefLabel": {
+      "@id": "skos:prefLabel"
+    },
+    "definition": {
+      "@id": "skos:definition"
+    },
+    "inScheme": {
+      "@id": "skos:inScheme"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType",
+      "@type": "ConceptScheme",
+      "title": "PhenomenonType",
+      "description": "Identifiers for the characteristics or categorization of an observation. Note: Joe King to provide.",
+      "creator": "Isabella Ruiz"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ActiveRegion",
+      "definition": "A localized, transient volume of the solar atmosphere in which PLAGEs, SUNSPOTS, FACULAe, FLAREs, etc. may be observed.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Aurora",
+      "definition": "A natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, especially near the northern or southern magnetic pole. The effect is caused by the interaction of charged particles from the sun with atoms in the upper atmosphere. In northern and southern regions, it is respectively called aurora borealis or Northern Lights and aurora australis or Southern Lights.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "BowShockCrossing",
+      "definition": "A crossing of the boundary between the undisturbed (except for foreshock effects) solar wind and the shocked, decelerated solar wind of the magnetosheath.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CoronalHole",
+      "definition": "An extended region of the corona, exceptionally low in density and associated with unipolar photospheric regions. A coronal hole can be an open magnetic field in the corona and (perhaps) inner heliosphere which has a faster than average solar wind outflow velocity. A region of lower than quiet coronal ion densities and electron densities in the corona or a coronal region with lower peak electron temperature than that found under quiet coronal conditions.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "CoronalMassEjection",
+      "definition": "A solar event (CME) that involves a burst of plasma ejected into the interplanetary medium. CMEs may be observed remotely relatively near the Sun or in situ in the interplanetary medium. Note that CMEs are often referred to as Interplanetary CMEs (ICMEs).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EITWave",
+      "definition": "A wave in the corona of the Sun that generates shock waves in the solar chromosphere (Moreton Waves). EIT Waves are produced by large solar flare and expand outward at about 1,000 km/s. It usually appears as a slowly moving diffuse arc of brightening in H-alpha, and may travel for several hundred thousand km.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "EnergeticSolarParticleEvent",
+      "definition": "An enhancement of interplanetary fluxes of energetic ions accelerated by interplanetary shocks and/or solar flares.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "ForbushDecrease",
+      "definition": "A rapid decrease in the observed galactic cosmic ray intensity following the passage of an outwardly convecting interplanetary magnetic field disturbance, such as those associated with large CMEs, that sweep some galactic cosmic rays away from Earth.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "GeomagneticStorm",
+      "definition": "A magnetospheric disturbance typically defined by variations in the horizontal component of the surface magnetic field on the Earth. The variation typically starts with a field enhancement associated with a solar wind pressure pulse and continues with a field depression associated with an enhancement of the diamagnetic magnetospheric ring current.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InterplanetaryCoronalMassEjection",
+      "definition": "An Interplanetary Coronal Mass Ejection (ICME) is a Coronal Mass Ejection (CME) observed in the solar wind far away from the Sun.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "InterplanetaryShock",
+      "definition": "A shock propagating generally anti-sunward through the slower solar wind, often seen in front of CME-associated plasma clouds.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagneticCloud",
+      "definition": "A transient event observed in the solar wind characterized as a region of enhanced magnetic field strength, smooth and large-scale rotation of the magnetic field vector, low proton temperature, and low plasma beta.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "MagnetopauseCrossing",
+      "definition": "A crossing of the interface between the shocked solar wind in the magnetosheath and the magnetic field and plasma in the magnetosphere.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "RadioBurst",
+      "definition": "Emissions of the Sun in radio wavelengths from centimeters to dekameters, under both quiet and disturbed conditions. Radio Bursts can be Type I consisting of many short, narrow-band bursts in the metric range (80 MHz to 200 MHz). Type II consisting of narrow-band emission that begins in the meter range (150 MHz) and sweeps slowly (tens of minutes) toward dekameter wavelengths (20 MHz). Type III consisting of narrow-band bursts that sweep rapidly (seconds) from decimeter to dekameter wavelengths (500 MHz to 20 MHz) and Type IV consisting of a smooth continuum of broadband bursts primarily in the meter range (10 MHz to 200 MHz).",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SectorBoundaryCrossing",
+      "definition": "A sector boundary crossing is a transit by a spacecraft across the heliospheric current sheet separating the dominantly outward (away from the Sun) interplanetary magnetic field of one hemisphere of the heliosphere from the dominantly inward (towards the Sun) polarity of the other hemisphere. Such crossings have multi-day intervals of opposite IMF dominant polarities on either side.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolarFlare",
+      "definition": "An explosive event in the solar atmosphere which produces electromagnetic radiation across the electromagnetic spectrum at multiple wavelengths from long-wave radio to the shortest wavelength gamma rays.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "SolarWindExtreme",
+      "definition": "Intervals of unusually large or small values of solar wind attributes such as flow speed and ion density.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "StreamInteractionRegion",
+      "definition": "The region where two solar wind streams, typically having differing characteristics and solar sources, abut up against (and possibly partially interpenetrate) each other. The abbreviation SIR is commonly used in place of Stream Interaction Region.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    },
+    {
+      "@type": "Concept",
+      "prefLabel": "Substorm",
+      "definition": "A process by which plasma in the magnetotail becomes energized at a fast rate.",
+      "inScheme": "https://spase-group.org/data/model/spase-latest/spase-latest_xsd.htm#PhenomenonType"
+    }
+  ]
+}
